@@ -69,29 +69,15 @@
     <!--[if lt IE 7]><p>您正在使用的瀏覽器為比 ie7 較舊的版本，已不支援本站使用程式語法，會影響到內容版面不正常而瀏覽不易，建議使用最新版本瀏覽器。</p><![endif]-->
     <header id="head">
         <div id="head_bar">
-        <a id="logo" href="index.html" title="回首頁"><h1>Alan Lin</h1></a>
+        <a id="logo" href="index.html" tabindex="2" title="回首頁"><h1>Alan Lin</h1></a>
         <label title="主要選單" class="open_nav" for="main_menu"><b>MENU</b><span class="icon"><h2 title="主要選單">主要選單</h2></span></label>
         <nav class="main_menu">
-            <a accesskey="M" id="accesskey_M" href="#accesskey_M" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
+            <a accesskey="M" id="accesskey_M" href="#accesskey_M" tabindex="3" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
                 <span>:::</span>
             </a>
             <ul class="nav_style">
-                <li class="active">
-                    <a href="index.html" title="My services" lang="en">
-                        <div class="loader">
-                            <span>S</span>
-                            <span class="span2">E</span>
-                            <span class="span3">R</span>
-                            <span class="span4">V</span>
-                            <span class="span4">I</span>
-                            <span class="span4">C</span>
-                            <span class="span4">E</span>
-                            <span class="span4">S</span>
-                        </div>
-                    </a>
-                </li>
                 <li>
-                    <a href="about.html" title="About me" lang="en">
+                    <a href="about.html" title="About me" tabindex="4" lang="en">
                         <div class="loader">
                             <span>A</span>
                             <span class="span2">B</span>
@@ -102,7 +88,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio.html" title="Web Design" lang="en">
+                    <a href="portfolio.html" title="Web Design" tabindex="4" lang="en">
                         <div class="loader">
                             <span>U</span>
                             <span class="span2">I</span>
@@ -117,7 +103,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" title="Graphic Design" lang="en">
+                    <a href="graphic.html" title="Graphic Design" tabindex="4" lang="en">
                         <div class="loader active">
                             <span>G</span>
                             <span class="span2">R</span>
@@ -137,17 +123,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://webnotebook.blogspot.tw/" title="Alan Lin's Web Design Notebook(另開新視窗)" lang="en" target="_blank">
+                    <a href="http://www.heyshow.com/gallery/16674/artworks/" title="Painting" tabindex="4" lang="en">
                         <div class="loader">
-                            <span>B</span>
-                            <span class="span2">L</span>
-                            <span class="span3">O</span>
-                            <span class="span4">G</span>
+                            <span>P</span>
+                            <span class="span2">A</span>
+                            <span class="span3">I</span>
+                            <span class="span4">N</span>
+                            <span class="span4">T</span>
+                            <span class="span5">I</span>
+                            <span class="span6">N</span>
+                            <span class="span7">G</span>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" title="Please feel free to contact me if you have any questions." lang="en">
+                    <a href="contact.html" title="Please feel free to contact me if you have any questions." tabindex="4" lang="en">
                         <div class="loader">
                             <span>C</span>
                             <span class="span2">O</span>
@@ -165,29 +155,29 @@
         </div><!--#head_bar-->
     </header>
     <main id="content"><!--#main_content以下內容區-->
-    <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
+    <a accesskey="C" id="accesskey_C" href="#accesskey_C" tabindex="5" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
         <span>:::</span>
     </a>
 <article id="my_portfolio">
 <h2>
-    <b>04.</b>
+    <b>03.</b>
     <i>平面設計作品集</i>
     <u>PORTFOLIO</u>
 </h2>
 <section id="portfolio" class="container">
     <ul class="portfolio-filter">
-        <li><a class="btn btn-default active" href="#" data-filter=".PHILIPS">PHILIPS DM</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".OTHER">OTHER DM</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".PACKAGEDESIGN">PACKAGE DESIGN</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".LOGODESIGN">LOGO DESIGN</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".DISPLAY">DISPLAY</a></li>
+        <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".PHILIPS" title="PHILIPS DM">PHILIPS DM</a></li>
+        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".OTHER" title="OTHER DM">OTHER DM</a></li>
+        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".PACKAGEDESIGN" title="PACKAGE DESIGN">PACKAGE DESIGN</a></li>
+        <li><a tabindex="9" class="btn btn-default" href="#" data-filter=".LOGODESIGN" title="LOGO DESIGN">LOGO DESIGN</a></li>
+        <li><a tabindex="10" class="btn btn-default" href="#" data-filter=".DISPLAY" title="DISPLAY">DISPLAY</a></li>
         <!--li><a class="btn btn-default" href="#" data-filter="*">ALL IMAGES</a></li-->
     </ul><!--/#portfolio-filter-->
     <ul class="portfolio-items col-3 gallery clearfix">
         <!--/.portfolio-item-->
         <li class="portfolio-item LOGODESIGN">
             <div class="item-inner"> 
-                <a class="overlay" title="MOLLIE 美甲" href="images/portfolio/gd/logo/mollie2-01.jpg" data-fancybox="MOLLIE">
+                <a tabindex="9" class="overlay" title="MOLLIE 美甲" href="images/portfolio/gd/logo/mollie2-01.jpg" data-fancybox="MOLLIE">
                     <img src="images/portfolio/gd_s/logo/mollie3-01.jpg" alt="MOLLIE 美甲">
                     <span>
                         <u>5 April 2017</u>
@@ -200,7 +190,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item LOGODESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Orcastras 資訊科技" href="images/portfolio/gd/logo/Orcastras_Logo_var1.jpg" data-fancybox="Orcastras">
+                <a tabindex="9" class="overlay" title="Orcastras 資訊科技" href="images/portfolio/gd/logo/Orcastras_Logo_var1.jpg" data-fancybox="Orcastras">
                     <img src="images/portfolio/gd_s/logo/Orcastras_Logo_var1.jpg" alt="Orcastras 資訊科技">
                     <span>
                         <u>1 September 2012</u>
@@ -213,7 +203,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PACKAGEDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="HeraDerm 高透氧凝膠OK絆" href="images/portfolio/gd/518case/HeraDerm_70x100x17mm.jpg" data-fancybox="HeraDerm">
+                <a tabindex="8" class="overlay" title="HeraDerm 高透氧凝膠OK絆" href="images/portfolio/gd/518case/HeraDerm_70x100x17mm.jpg" data-fancybox="HeraDerm">
                     <img src="images/portfolio/gd_s/518case/HeraDerm_70x100x17mm.jpg" alt="HeraDerm 高透氧凝膠OK絆">
                     <span>
                         <u>14 August 2012</u>
@@ -225,7 +215,7 @@
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item LOGODESIGN">
             <div class="item-inner">     
-                <a class="overlay" title="Azule 水族精品" href="images/portfolio/gd/logo/Azule_CS5.jpg" data-fancybox="Azule">
+                <a tabindex="9" class="overlay" title="Azule 水族精品" href="images/portfolio/gd/logo/Azule_CS5.jpg" data-fancybox="Azule">
                     <img src="images/portfolio/gd_s/logo/Azule_CS5.jpg" alt="Azule 水族精品">
                     <span>
                         <u>8 February 2012</u>
@@ -237,7 +227,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a class="overlay" title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_9.jpg" data-fancybox="PCL_Display_LED">
+                <a tabindex="10" class="overlay" title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_9.jpg" data-fancybox="PCL_Display_LED">
                     <img src="images/portfolio/gd_s/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_9.jpg" alt="台北南港 LED Display">
                     <span>
                         <u>16 March 2010</u>
@@ -259,7 +249,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item OTHER">
             <div class="item-inner">
-                <a class="overlay" title="Lagostina Lightbox" href="images/portfolio/gd_s/Lagostina/Lagostina_LightboxAD_70x105cm_4.jpg" data-fancybox="Lagostina">
+                <a tabindex="7" class="overlay" title="Lagostina Lightbox" href="images/portfolio/gd_s/Lagostina/Lagostina_LightboxAD_70x105cm_4.jpg" data-fancybox="Lagostina">
                     <img src="images/portfolio/gd_s/Lagostina/Lagostina_LightboxAD_70x105cm_4.jpg" alt="Lagostina">
                     <span>
                         <u>1 February 2010</u>
@@ -273,7 +263,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item OTHER">
             <div class="item-inner"> 
-                <a class="overlay" title="Tefal 香檳銀不鏽鋼鍋具 吊牌" href="images/portfolio/gd/Tefal/Tefal_HangTag_2.jpg" data-fancybox="HangTag">
+                <a tabindex="7" class="overlay" title="Tefal 香檳銀不鏽鋼鍋具 吊牌" href="images/portfolio/gd/Tefal/Tefal_HangTag_2.jpg" data-fancybox="HangTag">
                     <img src="images/portfolio/gd_s/Tefal/Tefal_HangTag_2.jpg" alt="Tefal 香檳銀不鏽鋼鍋具 吊牌">
                     <span>
                         <u>25 January 2010</u>
@@ -286,7 +276,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a class="overlay" title="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" data-fancybox="FDS810">
+                <a tabindex="10" class="overlay" title="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" data-fancybox="FDS810">
                     <img src="images/portfolio/gd_s/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" alt="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM">
                     <span>
                         <u>12 January 2010</u>
@@ -299,7 +289,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PHILIPS">
             <div class="item-inner">
-                <a class="overlay" title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/wm_15033856531051335916.jpg" data-fancybox="AOCR2010">
+                <a tabindex="6" class="overlay" title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/wm_15033856531051335916.jpg" data-fancybox="AOCR2010">
                     <img src="images/portfolio/gd_s/PHILIPS/PLT/AOCR2010/wm_15033856531051335916.jpg" alt="PHILIPS AOCR2010">
                     <span>
                         <u>28 December 2009</u>
@@ -321,7 +311,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PHILIPS">
             <div class="item-inner">    
-                <a class="overlay" title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/Tri-Fold-Brochure-MockUp-2.jpg" data-fancybox="Introduction">
+                <a tabindex="6" class="overlay" title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/Tri-Fold-Brochure-MockUp-2.jpg" data-fancybox="Introduction">
                     <img src="images/portfolio/gd_s/PHILIPS/PLT/Introduction/Tri-Fold-Brochure-MockUp-2.jpg" alt="PHILIPS Introduction">
                     <span>
                         <u>10 December 2009</u>
@@ -335,7 +325,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">  
-                <a class="overlay" title="Tefal TG" href="images/portfolio/gd/Tefal/Tefal_TG_0.jpg"data-fancybox="Tefal TG">
+                <a tabindex="10" class="overlay" title="Tefal TG" href="images/portfolio/gd/Tefal/Tefal_TG_0.jpg"data-fancybox="Tefal TG">
                     <img src="images/portfolio/gd_s/Tefal/Tefal_TG_0.jpg" alt="Tefal TG">
                     <span>
                     <u>6 October 2009</u>
@@ -348,7 +338,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PACKAGEDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Allmax ToiletSeat Display Box" href="images/portfolio/gd/Allmax/ToiletSeat_DisplayBox.jpg" data-fancybox="Allmax">
+                <a tabindex="8" class="overlay" title="Allmax ToiletSeat Display Box" href="images/portfolio/gd/Allmax/ToiletSeat_DisplayBox.jpg" data-fancybox="Allmax">
                     <img src="images/portfolio/gd_s/Allmax/ToiletSeat_DisplayBox.jpg" alt="Allmax ToiletSeat Display Box">
                     <span>
                         <u>2 October 2009</u>
@@ -362,7 +352,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a class="overlay" title="PCL壓克力DM架" href="images/portfolio/gd/PHILIPS/PCL/20090819/20090819PCL.jpg" data-fancybox="images">
+                <a tabindex="10" class="overlay" title="PCL壓克力DM架" href="images/portfolio/gd/PHILIPS/PCL/20090819/20090819PCL.jpg" data-fancybox="images">
                     <img src="images/portfolio/gd_s/PHILIPS/PCL/20090819/20090819PCL.jpg" alt="PCL壓克力DM架">
                     <span>
                         <u>19 August 2009</u>
@@ -374,7 +364,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PACKAGEDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="WEI-FU Pudding Petits" href="images/portfolio/gd/wf/WF_pudding_Petits_1.jpg" data-fancybox="wf">
+                <a tabindex="8" class="overlay" title="WEI-FU Pudding Petits" href="images/portfolio/gd/wf/WF_pudding_Petits_1.jpg" data-fancybox="wf">
                     <img src="images/portfolio/gd_s/wf/WF_pudding_Petits_1.jpg" alt="WEI-FU Pudding Petits">
                     <span>
                         <u>27 JULY 2009</u>
@@ -387,7 +377,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PHILIPS">
             <div class="item-inner">
-                <a class="overlay" title="PHILIPS 鹵素燈泡DM" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" data-fancybox="EcoClassic30">
+                <a tabindex="6" class="overlay" title="PHILIPS 鹵素燈泡DM" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" data-fancybox="EcoClassic30">
                     <img src="images/portfolio/gd_s/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" alt="PHILIPS 鹵素燈泡DM">
                     <span>
                         <u>20 JULY 2009</u>
@@ -401,7 +391,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PACKAGEDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="WEI-FU 牙牙Ｑ布丁" href="images/portfolio/gd/wf/WF_pudding_4.jpg" data-fancybox="WF_pudding_4">
+                <a tabindex="8" class="overlay" title="WEI-FU 牙牙Ｑ布丁" href="images/portfolio/gd/wf/WF_pudding_4.jpg" data-fancybox="WF_pudding_4">
                     <img src="images/portfolio/gd_s/wf/WF_pudding_4.jpg" alt="WEI-FU 牙牙Ｑ布丁">
                     <span>
                         <u>18 JUNE 2009</u>
@@ -412,7 +402,7 @@
         </li>
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a class="overlay" title="Tefal 肉品區賣鍋陳列架" href="images/portfolio/gd/Tefal/Tefal_Brief_Display_4.jpg" data-fancybox="Tefal_Brief_Display">
+                <a tabindex="10" class="overlay" title="Tefal 肉品區賣鍋陳列架" href="images/portfolio/gd/Tefal/Tefal_Brief_Display_4.jpg" data-fancybox="Tefal_Brief_Display">
                     <img src="images/portfolio/gd_s/Tefal/Tefal_Brief_Display_4.jpg" alt="Tefal 肉品區賣鍋陳列架">
                     <span>
                         <u>10 JUNE 2009</u>
@@ -424,7 +414,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item PACKAGEDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick3.jpg" data-fancybox="Schick">
+                <a tabindex="8" class="overlay" title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick3.jpg" data-fancybox="Schick">
                     <img src="images/portfolio/gd_s/Schick/Schick3.jpg" alt="舒適牌黑晶鑽金鋼狼提案">
                     <span>
                         <u>29 April 2009</u>
@@ -438,7 +428,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item OTHER">
             <div class="item-inner">
-                <a class="overlay" title="CASIO 廣告傳單" href="images/portfolio/gd/CASIO/20090226-CASIO_FC100_A4DM.jpg" data-fancybox="CASIO">
+                <a tabindex="7" class="overlay" title="CASIO 廣告傳單" href="images/portfolio/gd/CASIO/20090226-CASIO_FC100_A4DM.jpg" data-fancybox="CASIO">
                     <img src="images/portfolio/gd_s/CASIO/20090226-CASIO_FC100_A4DM.jpg" alt="CASIO 廣告傳單">
                     <span>
                         <u>26 February 2009</u>
@@ -469,18 +459,6 @@
             <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"></a></li>
         </ul><!--#community-->
         <ul id="sitemap">
-            <li>
-                <a href="index.html" class="button_language" data-text="SERVICES" title="My services" lang="en">
-                    <span>S</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>V</span>
-                    <span>I</span>
-                    <span>C</span>
-                    <span>E</span>
-                    <span>S</span>
-                </a>
-            </li>
             <li>
                 <a href="about.html" class="button_language" data-text="ABOUT" title="About me" lang="en">
                     <span>A</span>
@@ -522,10 +500,14 @@
                 </a>
             </li>
             <li>
-                <a href="https://webnotebook.blogspot.tw/" class="button_language" data-text="BLOG" title="Alan Lin's Web Design Notebook(另開新視窗)" target="_blank" lang="en">
-                    <span>B</span>
-                    <span>L</span>
-                    <span>O</span>
+                <a href="http://www.heyshow.com/gallery/16674/artworks/" class="button_language" data-text="PAINTER" title="Painter" target="_blank" lang="en">
+                    <span>P</span>
+                    <span>A</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>I</span>
+                    <span>N</span>
                     <span>G</span>
                 </a>
             </li>
@@ -555,7 +537,7 @@
             $portfolio_selectors = $('.portfolio-filter >li>a');
             if ($portfolio_selectors != 'undefined') {
                 $portfolio.isotope({ filter: ".PHILIPS" });
-            }
+            };
         });
     });
 </script>

@@ -369,7 +369,7 @@ header#head #head_bar a#logo h1 {
   transition: color 0.8s ease;
 }
 /* line 100, ../sass/_base-layout.scss */
-header#head #head_bar a#logo h1:focus, header#head #head_bar a#logo h1:hover {
+header#head #head_bar a#logo:focus h1, header#head #head_bar a#logo:hover h1 {
   color: #71C1DD;
 }
 /* line 104, ../sass/_base-layout.scss */
@@ -929,6 +929,15 @@ RWD
     width: unset;
   }
 }
+/* line 573, ../sass/_base-layout.scss */
+.search {
+  display: none;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 10000;
+}
+
 /*------------------------------------------------------------------
 按鈕 更多
 ------------------------------------------------------------------*/
