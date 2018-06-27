@@ -69,29 +69,15 @@
     <!--[if lt IE 7]><p>您正在使用的瀏覽器為比 ie7 較舊的版本，已不支援本站使用程式語法，會影響到內容版面不正常而瀏覽不易，建議使用最新版本瀏覽器。</p><![endif]-->
     <header id="head">
         <div id="head_bar">
-        <a id="logo" href="index.html" title="回首頁"><h1>Alan Lin</h1></a>
+        <a id="logo" href="index.html" tabindex="2" title="回首頁"><h1>Alan Lin</h1></a>
         <label title="主要選單" class="open_nav" for="main_menu"><b>MENU</b><span class="icon"><h2 title="主要選單">主要選單</h2></span></label>
         <nav class="main_menu">
-            <a accesskey="M" id="accesskey_M" href="#accesskey_M" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
+            <a accesskey="M" id="accesskey_M" href="#accesskey_M" tabindex="3" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
                 <span>:::</span>
             </a>
             <ul class="nav_style">
-                <li class="active">
-                    <a href="index.html" title="My services" lang="en">
-                        <div class="loader">
-                            <span>S</span>
-                            <span class="span2">E</span>
-                            <span class="span3">R</span>
-                            <span class="span4">V</span>
-                            <span class="span4">I</span>
-                            <span class="span4">C</span>
-                            <span class="span4">E</span>
-                            <span class="span4">S</span>
-                        </div>
-                    </a>
-                </li>
                 <li>
-                    <a href="about.html" title="About me" lang="en">
+                    <a href="about.html" title="About me" tabindex="4" lang="en">
                         <div class="loader">
                             <span>A</span>
                             <span class="span2">B</span>
@@ -102,7 +88,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio.html" title="Web Design" lang="en">
+                    <a href="portfolio.html" title="Web Design" tabindex="4" lang="en">
                         <div class="loader active">
                             <span>U</span>
                             <span class="span2">I</span>
@@ -117,7 +103,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" title="Graphic Design" lang="en">
+                    <a href="graphic.html" title="Graphic Design" tabindex="4" lang="en">
                         <div class="loader">
                             <span>G</span>
                             <span class="span2">R</span>
@@ -137,17 +123,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://webnotebook.blogspot.tw/" title="Alan Lin's Web Design Notebook(另開新視窗)" lang="en" target="_blank">
+                    <a href="http://www.heyshow.com/gallery/16674/artworks/" title="Painting" tabindex="4" lang="en">
                         <div class="loader">
-                            <span>B</span>
-                            <span class="span2">L</span>
-                            <span class="span3">O</span>
-                            <span class="span4">G</span>
+                            <span>P</span>
+                            <span class="span2">A</span>
+                            <span class="span3">I</span>
+                            <span class="span4">N</span>
+                            <span class="span4">T</span>
+                            <span class="span5">I</span>
+                            <span class="span6">N</span>
+                            <span class="span7">G</span>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" title="Please feel free to contact me if you have any questions." lang="en">
+                    <a href="contact.html" title="Please feel free to contact me if you have any questions." tabindex="4" lang="en">
                         <div class="loader">
                             <span>C</span>
                             <span class="span2">O</span>
@@ -165,27 +155,74 @@
         </div><!--#head_bar-->
     </header>
     <main id="content"><!--#main_content以下內容區-->
-    <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
+    <a accesskey="C" id="accesskey_C" href="#accesskey_C" tabindex="5" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
         <span>:::</span>
     </a>
 <article id="my_portfolio">
 <h2>
-    <b>03.</b>
+    <b>02.</b>
     <i>網頁設計作品集</i>
     <u>PORTFOLIO</u>
 </h2>
 <section id="portfolio" class="container">
     <ul class="portfolio-filter">
-        <li><a class="btn btn-default active" href="#" data-filter=".WEDDESIGN">WED DESIGN</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".APPUIDESIGN">APP UI DESIGN</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".EDM">BANNER / EDM</a></li>
+        <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".WEDDESIGN">WEB DESIGN</a></li>
+        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".APPUIDESIGN">APP UI DESIGN</a></li>
+        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".EDM">BANNER / EDM</a></li>
         <!--class="btn btn-default" href="#" data-filter="*">ALL IMAGES-->
     </ul>
     <!--/#portfolio-filter-->
     <ul class="portfolio-items col-3 gallery clearfix">
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Yunlin County Tourism Network" href="http://www.alan-lin.com/20170828.html">
+                <a tabindex="6" class="overlay" title="Public Works Department" href="http://www.alan-lin.com/20180527.html">
+                    <img src="images/portfolio/web_s/2018/Public-Works-Department.jpg" alt="Public Works Department">
+                    <span>
+                        <u>27 May 2018</u>
+                        <b>Public Works Department</b>
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="portfolio-item WEDDESIGN">
+            <div class="item-inner">
+                <a tabindex="6" class="overlay" title="Humanrights Theme Website" href="images/portfolio/web/2018/humanrights_cy.jpg" data-fancybox="Humanrights">
+                    <img src="images/portfolio/web_s/2018/humanrights_cy.jpg" alt="Humanrights Theme Website">
+                    <span>
+                        <u>22 March 2018</u>
+                        <b>Humanrights</b>
+                    </span>
+                </a>
+                <a title="Humanrights Theme Website" href="images/portfolio/web/2018/humanrights_cy.jpg" data-fancybox="Humanrights"></a>
+            </div>
+        </li>
+        <li class="portfolio-item WEDDESIGN">
+            <div class="item-inner">
+                <a tabindex="6" class="overlay" title="Architectural Theme Website" href="images/portfolio/web/2018/Architectural-Theme-Website.jpg" data-fancybox="Architectural">
+                    <img src="images/portfolio/web_s/2018/Architectural-Theme-Website.jpg" alt="Architectural Theme Website">
+                    <span>
+                        <u>21 March 2018</u>
+                        <b>Architectural</b>
+                    </span>
+                </a>
+                <a title="Architectural Theme Website" href="images/portfolio/web/2018/Architectural-Theme-Website.jpg" data-fancybox="Architectural"></a>
+            </div>
+        </li>
+        <li class="portfolio-item WEDDESIGN">
+            <div class="item-inner">
+                <a tabindex="6" class="overlay" title="Neighborhood Network" href="images/portfolio/web/2018/li-Taipei-Website.jpg" data-fancybox="Neighborhood">
+                    <img src="images/portfolio/web_s/2018/li-Taipei-Website.jpg" alt="Neighborhood Network">
+                    <span>
+                        <u>12 January 2018</u>
+                        <b>Neighborhood Network</b>
+                    </span>
+                </a>
+                <a title="Neighborhood Network" href="images/portfolio/web/2018/li-Taipei-Website.jpg" data-fancybox="Neighborhood"></a>
+            </div>
+        </li>
+        <li class="portfolio-item WEDDESIGN">
+            <div class="item-inner">
+                <a tabindex="6" class="overlay" title="Yunlin County Tourism Network" href="http://www.alan-lin.com/20170828.html">
                     <img src="images/portfolio/web_s/2017/20170828.jpg" alt="Yunlin County Tourism Network">
                     <span>
                         <u>28 August 2017</u>
@@ -196,7 +233,7 @@
         </li>
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Yunlin County Tourism Network" href="http://www.alan-lin.com/20170919.html">
+                <a tabindex="6" class="overlay" title="Yunlin County Tourism Network" href="http://www.alan-lin.com/20170919.html">
                     <img src="images/portfolio/web_s/2017/20170919.jpg" alt="Yunlin County Tourism Network">
                     <span>
                         <u>19 September 2017</u>
@@ -208,7 +245,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item APPUIDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="貓奴論壇(另開新視窗)" href="http://www.alan-lin.com/app/cat_web/index.html" target="_blank">
+                <a tabindex="7" class="overlay" title="貓奴論壇(另開新視窗)" href="http://www.alan-lin.com/app/cat_web/index.html" target="_blank">
                     <img src="images/portfolio/web_s/app/cat_app.jpg" alt="貓奴論壇">
                     <span>
                         <u>3 June 2017</u>
@@ -220,7 +257,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="menya634" href="images/portfolio/web/2013/menya634/menya634_index_va2_3.jpg" data-fancybox="menya634">
+                <a tabindex="6" class="overlay" title="menya634" href="images/portfolio/web/2013/menya634/menya634_index_va2_3.jpg" data-fancybox="menya634">
                     <img src="images/portfolio/web_s/2013/menya634/menya634_index_va2_3.jpg" alt="menya634">
                     <span>
                         <u>JUNE 2013</u>
@@ -234,7 +271,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="FALKEN" href="images/portfolio/web/2013/FALKEN/FALKEN_index_var1_o.jpg" data-fancybox="FALKEN">
+                <a tabindex="6" class="overlay" title="FALKEN" href="images/portfolio/web/2013/FALKEN/FALKEN_index_var1_o.jpg" data-fancybox="FALKEN">
                     <img src="images/portfolio/web_s/2013/FALKEN/FALKEN_index_var1_o.jpg" alt="FALKEN">
                     <span>
                         <u>JUNE 2013</u>
@@ -247,7 +284,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="異國設計" href="images/portfolio/web/2013/exotica/2exotica_inside_var4_list.jpg" data-fancybox="exotica">
+                <a tabindex="6" class="overlay" title="異國設計" href="images/portfolio/web/2013/exotica/2exotica_inside_var4_list.jpg" data-fancybox="exotica">
                     <img src="images/portfolio/web_s/2013/exotica/2exotica_inside_var4_list.jpg" alt="異國設計">
                     <span>
                         <u>JUNE 2013</u>
@@ -266,7 +303,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                    <a class="overlay" title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_index_var6.jpg" data-fancybox="educationvideo">
+                <a tabindex="6" class="overlay" title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_index_var6.jpg" data-fancybox="educationvideo">
                         <img src="images/portfolio/web_s/2013/educationvideo/educationvideo_index_var6.jpg" alt="科技企業">
                         <span>
                             <u>JUNE 2013</u>
@@ -280,7 +317,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a title="hwacom" class="overlay" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_1.jpg" data-fancybox="hwacom">
+                <a tabindex="6" title="hwacom" class="overlay" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_1.jpg" data-fancybox="hwacom">
                     <img src="images/portfolio/web_s/2012/hwacom/hwacom_index_var14_1hover.jpg" alt="hwacom">
                     <span>
                         <u>JUNE 2012</u>
@@ -295,7 +332,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_0.jpg" data-fancybox="Meerkat">
+                <a tabindex="6" class="overlay" title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_0.jpg" data-fancybox="Meerkat">
                     <img src="images/portfolio/web_s/2012/Meerkat/Meerkat_index_var5_0.jpg" alt="Meerkat">
                     <span>
                         <u>JUNE 2012</u>
@@ -311,7 +348,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Sophias" href="images/portfolio/web/2012/sophias_index_var4.jpg" data-fancybox="Sophias">
+                <a tabindex="6" class="overlay" title="Sophias" href="images/portfolio/web/2012/sophias_index_var4.jpg" data-fancybox="Sophias">
                     <img src="images/portfolio/web_s/2012/sophias_index_var4.jpg" alt="Sophias">
                     <span>
                         <u>JUNE 2012</u>
@@ -323,7 +360,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="Gliderol" href="images/portfolio/web/2012/gliderol/gliderol_index_var13.jpg" data-fancybox="Gliderol">
+                <a tabindex="6" class="overlay" title="Gliderol" href="images/portfolio/web/2012/gliderol/gliderol_index_var13.jpg" data-fancybox="Gliderol">
                     <img src="images/portfolio/web_s/2012/gliderol/gliderol_index_var13.jpg" alt="Gliderol">
                     <span>
                         <u>JUNE 2012</u>
@@ -335,7 +372,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="SiPix" href="images/portfolio/web/2012/sipix_index_var1.jpg" data-fancybox="SiPix">
+                <a tabindex="6" class="overlay" title="SiPix" href="images/portfolio/web/2012/sipix_index_var1.jpg" data-fancybox="SiPix">
                     <img src="images/portfolio/web_s/2012/sipix_index_var1.jpg" alt="SiPix">
                     <span>
                         <u>JUNE 2012</u>
@@ -347,7 +384,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="yonowu" href="images/portfolio/web/2012/yonowu_index_var1.jpg" data-fancybox="yonowu">
+                <a tabindex="6" class="overlay" title="yonowu" href="images/portfolio/web/2012/yonowu_index_var1.jpg" data-fancybox="yonowu">
                     <img src="images/portfolio/web_s/2012/yonowu_index_var1.jpg" alt="yonowu">
                     <span>
                         <u>JUNE 2012</u>
@@ -359,7 +396,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item APPUIDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="醫院候診面板" href="images/portfolio/web/2012/Hospital_Kanban_var4.jpg" data-fancybox="Hospital_Kanban">
+                <a tabindex="7" class="overlay" title="醫院候診面板" href="images/portfolio/web/2012/Hospital_Kanban_var4.jpg" data-fancybox="Hospital_Kanban">
                     <img src="images/portfolio/web_s/2012/Hospital_Kanban_var4.jpg" alt="醫院候診面板">
                     <span>
                         <u>JUNE 2012</u>
@@ -371,7 +408,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var8.jpg" data-fancybox="ruiying">
+                <a tabindex="6" class="overlay" title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var8.jpg" data-fancybox="ruiying">
                 <img src="images/portfolio/web_s/2012/ruiying/ruiying_index_var8.jpg" alt="瑞瑩設計工程">
                 <span>
                     <u>JUNE 2012</u>
@@ -387,7 +424,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="皇室" href="images/portfolio/web/2012/royal/003.jpg" data-fancybox="royal">
+                <a tabindex="6" class="overlay" title="皇室" href="images/portfolio/web/2012/royal/003.jpg" data-fancybox="royal">
                     <img src="images/portfolio/web_s/2012/royal/003.jpg" alt="皇室">
                     <span>
                         <u>JUNE 2012</u>
@@ -405,8 +442,8 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="weblink" title="格林管理顧問 格寧管理諮詢" href="http://www.gamc.com/tw/index.aspx" target="_blank">格林管理顧問 格寧管理諮詢 WEB SITE(另開新視窗)</a>
-                <a class="overlay" title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_index_var8.jpg" data-fancybox="gamc">
+                <a tabindex="6" class="weblink" title="格林管理顧問 格寧管理諮詢" href="http://www.gamc.com/tw/index.aspx" target="_blank">格林管理顧問 格寧管理諮詢 WEB SITE(另開新視窗)</a>
+                <a tabindex="6" class="overlay" title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_index_var8.jpg" data-fancybox="gamc">
                     <img src="images/portfolio/web_s/2012/gamc/gamc_index_var8.jpg" alt="格林管理顧問 格寧管理諮詢">
                     <span>
                         <u>JUNE 2012</u>
@@ -420,7 +457,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item APPUIDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_6-2.jpg" data-fancybox="DSC">
+                <a tabindex="7" class="overlay" title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_6-2.jpg" data-fancybox="DSC">
                     <img src="images/portfolio/web_s/2012/DSC/DSC_APPDESIGN_6-2.jpg" alt="相簿 APP UI 設計">
                     <span>
                         <u>JUNE 2012</u>
@@ -434,7 +471,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_design_index_var2.jpg" data-fancybox="city">
+                <a tabindex="6" class="overlay" title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_design_index_var2.jpg" data-fancybox="city">
                     <img src="images/portfolio/web_s/2012/city/city-design_design_index_var2.jpg" alt="鎮翔國際設計工程">
                     <span>
                         <u>JUNE 2012</u>
@@ -449,8 +486,8 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="weblink" title="晶虹生醫科技" href="http://jinhon.begonia.tw/index.html" target="_blank">晶虹生醫科技 WEB SITE(另開新視窗)</a>
-                <a class="overlay" title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_1.jpg" data-fancybox="antrodia">
+                <!--a tabindex="6" class="weblink" title="晶虹生醫科技" href="http://jinhon.begonia.tw/index.html" target="_blank">晶虹生醫科技 WEB SITE(另開新視窗)</a-->
+                <a tabindex="6" class="overlay" title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_1.jpg" data-fancybox="antrodia">
                     <img src="images/portfolio/web_s/2012/antrodia/antrodia_index_var6_1.jpg" alt="晶虹生醫科技">
                     <span>
                         <u>JUNE 2012</u>
@@ -468,7 +505,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="梁婆婆臭豆腐店" href="images/portfolio/web/edm/06_liangpopo.jpg" data-fancybox="liangpopo">
+                <a tabindex="8" class="overlay" title="梁婆婆臭豆腐店" href="images/portfolio/web/edm/06_liangpopo.jpg" data-fancybox="liangpopo">
                     <img src="images/portfolio/web_s/edm/06_liangpopo.jpg" alt="梁婆婆臭豆腐店">
                     <span>
                         <u>21 August 2012</u>
@@ -480,7 +517,7 @@
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="HANA錵鐵板燒" href="images/portfolio/web/edm/01_twinpeak.jpg" data-fancybox="HANA">
+                <a tabindex="8" class="overlay" title="HANA錵鐵板燒" href="images/portfolio/web/edm/01_twinpeak.jpg" data-fancybox="HANA">
                     <img src="images/portfolio/web_s/edm/01_twinpeak.jpg" alt="HANA錵鐵板燒">
                     <span>
                         <u>21 August 2012</u>
@@ -493,7 +530,7 @@
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="遠傳活動 電信費輕鬆繳" href="images/portfolio/web/edm/ebill800x1180.jpg" data-fancybox="ebill">
+                <a tabindex="8" class="overlay" title="遠傳活動 電信費輕鬆繳" href="images/portfolio/web/edm/ebill800x1180.jpg" data-fancybox="ebill">
                     <img src="images/portfolio/web_s/edm/ebill800x1180.jpg" alt="遠傳活動 電信費輕鬆繳">
                     <span>
                         <u>11 May 2012</u>
@@ -506,35 +543,34 @@
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <img src="images/portfolio/web_s/edm/20120427.jpg" alt="三義鄉農會">
-                <span>
-                    <u>27 April 2012</u>
-                    <b>三義鄉農會</b>
-                </span>
-                <div class="overlay">
-                    <a class="overlay" title="三義鄉農會" href="images/portfolio/web/edm/20120427.jpg" data-fancybox="20120427">
-                    </a>
-                </div>
+                <a tabindex="8" class="overlay" title="三義鄉農會" href="images/portfolio/web/edm/20120427.jpg" data-fancybox="20120427">
+                    <img src="images/portfolio/web_s/edm/20120427.jpg" alt="三義鄉農會">
+                    <span>
+                        <u>11 May 2012</u>
+                        <b>三義鄉農會</b>
+                    </span>
+                </a>
+                <a title="三義鄉農會" href="images/portfolio/web/edm/20120427.jpg" data-fancybox="ebill"></a>
             </div>
         </li>
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/m640x260.jpg" data-fancybox="spm">
+                <a tabindex="8" class="overlay" title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/m640x260.jpg" data-fancybox="spm">
                     <img src="images/portfolio/web_s/edm/m640x260.jpg" alt="藝企相投 國樂贈票活動">
                     <span>
                         <u>13 March 2012</u>
                         <b>藝企相投 國樂贈票活動</b>
                     </span>
                 </a>
-                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/mEDM2" data-fancybox="spm"></a>
+                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/mEDM2.jpg" data-fancybox="spm"></a>
                 <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/m500x500.jpg" data-fancybox="spm"></a>
             </div>
         </li>
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="銀行公會EDM_NOV" href="images/portfolio/web/edm/edm_Nov2.jpg" data-fancybox="edm_Nov2">
+                <a tabindex="8" class="overlay" title="銀行公會EDM_NOV" href="images/portfolio/web/edm/edm_Nov2.jpg" data-fancybox="edm_Nov2">
                     <img src="images/portfolio/web_s/edm/edm_Nov2.jpg" alt="銀行公會EDM_NOV">
                     <span>
                         <u>2 November 2012</u>
@@ -546,7 +582,7 @@
         <!--/.portfolio-item 2011-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="butyshop活動廣告" href="images/portfolio/web/edm/butyshop780x850.jpg" data-fancybox="butyshop780x850">
+                <a tabindex="8" class="overlay" title="butyshop活動廣告" href="images/portfolio/web/edm/butyshop780x850.jpg" data-fancybox="butyshop780x850">
                     <img src="images/portfolio/web_s/edm/butyshop780x850.jpg" alt="butyshop活動廣告">
                     <span>
                         <u>18 September 2012</u>
@@ -558,7 +594,7 @@
         <!--/.portfolio-item 2011-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a class="overlay" title="佢商名品" href="images/portfolio/web/edm/gs640x260_2.jpg" data-fancybox="gs640x260">
+                <a tabindex="8" class="overlay" title="佢商名品" href="images/portfolio/web/edm/gs640x260_2.jpg" data-fancybox="gs640x260">
                     <img src="images/portfolio/web_s/edm/gs640x260_2.jpg" alt="佢商名品">
                     <span>
                         <u>19 August 2012</u>
@@ -570,7 +606,7 @@
         <!--/.portfolio-item 2011-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="overlay" title="頌揚基督宣道會" href="images/portfolio/web/2011/WPC_index_var6.jpg" data-fancybox="WPC_index_var6">
+                <a tabindex="6" class="overlay" title="頌揚基督宣道會" href="images/portfolio/web/2011/WPC_index_var6.jpg" data-fancybox="WPC_index_var6">
                     <img src="images/portfolio/web_s/2011/WPC_index_var6.jpg" alt="頌揚基督宣道會">
                     <span>
                         <u>JUNE 2011</u>
@@ -582,7 +618,7 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                    <a class="overlay" href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_0.jpg" data-fancybox="Home_Design" title="HOME DESIGN">
+                <a tabindex="6" class="overlay" href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_0.jpg" data-fancybox="Home_Design" title="HOME DESIGN">
                         <img src="images/portfolio/web_s/2011/Home_Design10/Home_Design_index_ver10_0.jpg" alt="HOME DESIGN">
                         <span>
                             <u>JUNE 2011</u>
@@ -607,8 +643,8 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a class="weblink" href="http://www.aurogem.com.tw/" target="_blank">AUROGEM JEWELAY WEB SITE</a>
-                <a class="overlay" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" data-fancybox="AUROGEM">
+                <a tabindex="6" class="weblink" href="http://www.aurogem.com.tw/" target="_blank">AUROGEM JEWELAY WEB SITE</a>
+                <a tabindex="6" class="overlay" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" data-fancybox="AUROGEM">
                     <img src="images/portfolio/web_s/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" alt="AUROGEM JEWELAY">
                     <span>
                         <u>JUNE 2011</u>
@@ -648,18 +684,6 @@
             <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"></a></li>
         </ul><!--#community-->
         <ul id="sitemap">
-            <li>
-                <a href="index.html" class="button_language" data-text="SERVICES" title="My services" lang="en">
-                    <span>S</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>V</span>
-                    <span>I</span>
-                    <span>C</span>
-                    <span>E</span>
-                    <span>S</span>
-                </a>
-            </li>
             <li>
                 <a href="about.html" class="button_language" data-text="ABOUT" title="About me" lang="en">
                     <span>A</span>
@@ -701,10 +725,14 @@
                 </a>
             </li>
             <li>
-                <a href="https://webnotebook.blogspot.tw/" class="button_language" data-text="BLOG" title="Alan Lin's Web Design Notebook(另開新視窗)" target="_blank" lang="en">
-                    <span>B</span>
-                    <span>L</span>
-                    <span>O</span>
+                <a href="http://www.heyshow.com/gallery/16674/artworks/" class="button_language" data-text="PAINTER" title="Painter" target="_blank" lang="en">
+                    <span>P</span>
+                    <span>A</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>I</span>
+                    <span>N</span>
                     <span>G</span>
                 </a>
             </li>
@@ -734,8 +762,8 @@
             $portfolio_selectors = $('.portfolio-filter >li>a');
             if ($portfolio_selectors != 'undefined') {
                 $portfolio.isotope({ filter: ".WEDDESIGN" });
-                });
-            }
+            };
+            
         });
     });
 </script>
