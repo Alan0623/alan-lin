@@ -31,28 +31,29 @@ audio:not([controls]){display: none;}
 Reset
 ------------------------------------------------------------------*/
 *{margin: 0;padding: 0;box-sizing: border-box;}
-html, body {min-width: 300px; width:expression(document.body.clientWidth < 300? "300px": "auto" );height: 100%;padding: 0; margin: 0;font-family: "微軟正黑體","Ubuntu", Helvetica, "Heiti TC", "Microsoft Sans Serif", "Microsoft Sans Serif", "Helvetica", "Geneva", "sans-serif";}
-img {background: transparent;-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */ zoom: 1;}
+html, body {min-width: 300px;height: 100%;padding: 0; margin: 0;font-family: "微軟正黑體","Ubuntu", Helvetica, "Heiti TC", "Microsoft Sans Serif", "Microsoft Sans Serif", "Helvetica", "Geneva", "sans-serif";}
 /* Safari、Chrome、IE9、Opera */::selection {background:$deep-gray;color: $white;}
 /* Firefox */::-moz-selection {background:$deep-gray;color: $white;}
-a{outline: none; /*適用Firefox*/hlbr:expression(this.onFocus=this.blur()); /*適用IE*/}
+a{outline: none;}
 a, a:active, a:hover{text-decoration: none;}
 body{position:relative;background-color:$white;}
 ul,li{list-style: none;padding: 0;margin: 0;}
 /*------------------------------------------------------------------
 accesskey
 ------------------------------------------------------------------*/
-#accesskey_X{position: absolute;z-index: 999;}
-#accesskey_U span,#accesskey_M span,#accesskey_C span,#accesskey_R span,#accesskey_S span,#accesskey_X span,#accesskey_Z span
+#accesskey_X{position: absolute;z-index: 9;}
+#accesskey_U span,#accesskey_M span,#accesskey_T span,#accesskey_C span,#accesskey_R span,#accesskey_S span,#accesskey_X span,#accesskey_Z span
 {font-size: 20px;font-weight: bold; speak: none;line-height: 20px;color:#000;margin: 0px;display: block;padding: 0px 8px 4px 8px;min-height: 20px;min-width: 20px;opacity: 0;
   @media screen and (min-width:$pc-width){opacity: 1;}}
-#accesskey_U:focus,#accesskey_M:focus,#accesskey_C:focus,#accesskey_R:focus,#accesskey_S:focus,#accesskey_X:focus,#accesskey_Z:focus{border: none;}
-#accesskey_U:focus span,#accesskey_M:focus span,#accesskey_C:focus span,#accesskey_R:focus span,#accesskey_S:focus span,#accesskey_X:focus span,#accesskey_Z:focus span{background-color: #499CB9;color:#fff;}
+#accesskey_U:focus,#accesskey_M:focus,#accesskey_T:focus,#accesskey_C:focus,#accesskey_R:focus,#accesskey_S:focus,#accesskey_X:focus,#accesskey_Z:focus{border: none;}
+#accesskey_U:focus span,#accesskey_M:focus span,#accesskey_T:focus span,#accesskey_C:focus span,#accesskey_R:focus span,#accesskey_S:focus span,#accesskey_X:focus span,#accesskey_Z:focus span{background-color: #499CB9;color:#fff;}
 .no_js .no_js_info{font-size: 1em; line-height: 1.6em;padding: 20px 50px;}
 u.clearboth{clear: both;display: block;}
+#accesskey_T{position: absolute;top: 14px;margin-left: -15px;span{color:#efefef;}}
 #accesskey_M{left:-12px;top: 14px;span{color:#efefef;}} 
 #accesskey_C{position: absolute;z-index: 9999;top: 0px;left: 10px;span{color:#efefef;margin-top: 60px;}}
-#accesskey_Z{span{color:#71C1DD;}} 
+#accesskey_X,#accesskey_Z{span{color:#71C1DD;}} 
+#accesskey_X:focus span,
 #accesskey_Z:focus span{background-color: #000;color:#fff;}
 /*------------------------------------------------------------------
 整個網站 首頁 內頁 介面樣式 header  手機版主選單
@@ -97,8 +98,11 @@ width: 100%;
         font-family: 'Kaushan Script', cursive;
         color: $black;line-height: 60px;
         transition:color 0.8s ease;
-        &:focus,
-        &:hover{color: $major-color;}
+      }
+      &:focus,&:hover{
+        h1{
+          color: $major-color;
+        }
       }
     } 
     a#accesskey_M{position: absolute;z-index: 99999;}
@@ -111,7 +115,7 @@ width: 100%;
     width: 45px;
     height: 45px;
     transition-duration: 0.5s;
-    transition-timing-function: swing;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
     cursor: pointer;
     border-radius: 3px;
     h2{@extend %hide-text;}
@@ -353,7 +357,7 @@ footer#fatfooter{
         text-decoration:none;
         background:-moz-linear-gradient( center top, #50b0bf 5%, #499bb9 100% );
         background:-ms-linear-gradient( top, #50b0bf 5%, #499bb9 100% );
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#50b0bf', endColorstr='#499bb9');
+        //filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#50b0bf', endColorstr='#499bb9');
         background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #50b0bf), color-stop(100%, #499bb9) );
         text-shadow:1px 1px 0px #33839e;
         -webkit-box-shadow:inset 1px 1px 5px 0px #5aafcc;
@@ -362,6 +366,9 @@ footer#fatfooter{
         -webkit-box-shadow:1px 1px 2px #50a7c7;
         -moz-box-shadow:1px 1px 2px #50a7c7;
         box-shadow:1px 1px 2px #50a7c7;
+        b{
+          @extend %hide-text;
+        }
         &:before{  
           -moz-transform:scale(1)translateX(0);
           -webkit-transform:scale(1)translateX(0);
@@ -438,6 +445,7 @@ footer#fatfooter{
     &:after{display: block;clear: both;content: "";}
   }
   ul#sitemap{
+    position: relative;
     padding: 0 10px;
     width: 320px;
     height: unset;
@@ -534,7 +542,11 @@ RWD
     }
 
 }
-
+@media screen and (max-width: 768px){
+        ul.nav_style {
+          li:nth-last-child(1) {display: none;}
+        }
+}
 @media screen and (min-width: 940px){
   header#head nav.main_menu ul.nav_style li a .loader span{
   font-size: .85em
@@ -568,4 +580,12 @@ RWD
     width: unset;
     }
   }
+}
+
+.search{
+  display: none;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 10000;
 }

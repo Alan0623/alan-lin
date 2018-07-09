@@ -532,7 +532,6 @@ main#content #my_services {
 main#content #my_services:before {
   content: "";
   position: absolute;
-  z-index: -1px;
   left: 0px;
   top: 0;
   width: 0;

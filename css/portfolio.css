@@ -95,7 +95,7 @@ main#content {
 /* line 62, ../sass/portfolio.scss */
 .portfolio-filter > li a.active:before, .portfolio-filter > li a.active:after {
   position: absolute;
-  left: 40%;
+  left: 36%;
   content: "";
   width: 0;
   height: 0;
@@ -109,7 +109,7 @@ main#content {
 }
 /* line 76, ../sass/portfolio.scss */
 .portfolio-filter > li a.active:after {
-  left: 40%;
+  left: 36%;
   bottom: -8px;
   border-color: #499CB9 transparent transparent transparent;
   z-index: 1;
@@ -143,7 +143,7 @@ main#content {
   /* line 106, ../sass/portfolio.scss */
   .portfolio-filter > li a.active:before {
     display: block;
-    left: 40%;
+    left: 36%;
     bottom: -6px;
     border-color: #fff transparent transparent transparent;
     z-index: 2;
@@ -363,9 +363,11 @@ main#content {
   -ms-transform: scale(1);
   transform: scale(1);
   transition: all 400ms ease-out;
-  width: 100%;
+  width: 101%;
+  margin-left: -1px;
+  margin-top: -1px;
 }
-/* line 302, ../sass/portfolio.scss */
+/* line 304, ../sass/portfolio.scss */
 .portfolio-item .item-inner h5 {
   background: #fff;
   margin: 0;
@@ -378,7 +380,7 @@ main#content {
   overflow: hidden;
 }
 
-/* line 316, ../sass/portfolio.scss */
+/* line 318, ../sass/portfolio.scss */
 .portfolio-item .overlay:focus,
 .portfolio-item .overlay:hover {
   opacity: 1;
@@ -386,19 +388,19 @@ main#content {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 320, ../sass/portfolio.scss */
+/* line 322, ../sass/portfolio.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 323, ../sass/portfolio.scss */
+/* line 325, ../sass/portfolio.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 328, ../sass/portfolio.scss */
+/* line 330, ../sass/portfolio.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -408,7 +410,7 @@ main#content {
   transition-duration: 0.8s;
 }
 
-/* line 336, ../sass/portfolio.scss */
+/* line 338, ../sass/portfolio.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -417,7 +419,7 @@ main#content {
   transition-property: height, width;
 }
 
-/* line 343, ../sass/portfolio.scss */
+/* line 345, ../sass/portfolio.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -427,7 +429,7 @@ main#content {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 351, ../sass/portfolio.scss */
+/* line 353, ../sass/portfolio.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -440,7 +442,7 @@ main#content {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 362, ../sass/portfolio.scss */
+/* line 364, ../sass/portfolio.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -507,7 +509,7 @@ main#content {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 435, ../sass/portfolio.scss */
+  /* line 437, ../sass/portfolio.scss */
   .portfolio-items.col-3 > li {
     width: 100%;
     display: block;

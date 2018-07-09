@@ -76,9 +76,10 @@ main#content{
       line-height: 1.6em;
       margin-bottom: 54px;
       h3{
-        font-size: 1em;
+        font-size: 1.2em;
         letter-spacing: 2px;
         margin-bottom: 24px;
+        color:#499CB9;
       }
       ul{
         li{
@@ -88,6 +89,7 @@ main#content{
         }
       }
     }
+    #info h3{color: #000;}
     #LICENSES ul{
       position:relative;
       &::after{
@@ -217,6 +219,11 @@ main#content{
     @media screen and (min-width:768px){
     padding-top:0px;
     }
+    h3{
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      color: #499CB9;
+    }
     .instant_messaging{
       margin-top: 20px;
       margin-bottom: 20px;
@@ -226,6 +233,7 @@ main#content{
           padding-right:0px;
         }
         a{color: #000;
+          text-decoration: underline;
           &:focus,
           &:hover{
             color: #71C1DD;
@@ -235,6 +243,10 @@ main#content{
     }
 
     form{
+      label{
+        display: block;
+        margin: 5px 0;
+      }
       input, textarea {
           font-size: 0.8em;
           font-family: "微軟正黑體","Ubuntu", Helvetica, "Heiti TC", "Microsoft Sans Serif", "Microsoft Sans Serif", "Helvetica", "Geneva", "sans-serif";
@@ -245,6 +257,10 @@ main#content{
           width: 100%;
           margin-bottom: 0.5em;
           border-radius: 5px;
+          &:focus{
+            outline: #71C1DD solid 4px;
+            border-radius: 5px;
+          }
       }
       textarea {
         width: 100%;max-width:100%;min-width:100%;
@@ -268,4 +284,35 @@ main#content{
       }
   }
 }
-@media screen and (min-width: 768px){}
+.sitmap_info{
+    line-height: 1.6em;
+    .sitmap_info_title{
+      margin-top: 20px;
+      font-size: 1.2em;
+      letter-spacing: 2px;
+    }
+    .sitemap_list,
+    .sitmap_info_browser{
+      a{
+        color: #249edd;
+        text-decoration: underline;
+        &:focus,&:hover{
+          color: orange;
+        }
+      }
+    }
+    .sitemap_list{
+      margin-left: 20px;
+      margin-top: 5px;
+      li{ list-style-type:decimal;
+        padding: 5px 0;
+        b{
+          display: block;
+          font-weight: normal;
+          color: #3e3b33;
+          font-size: .9em;
+          line-height: 1.4em;
+        }
+      }
+    }
+}

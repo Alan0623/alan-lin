@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>林位青 個人網站 Alan Lin Portfolio Website - 網頁設計作品集 Web Design Portfolio</title>
+    <title>林位青 個人網站 Alan Lin Portfolio Website - 使用者介面設計作品 UI Design Portfolio</title>
     <!--IE integration -->
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--強迫 IE 在顯示網頁時使用最新的引擎版本-->
@@ -77,7 +77,7 @@
             </a>
             <ul class="nav_style">
                 <li>
-                    <a href="about.html" title="About me" tabindex="4" lang="en">
+                    <a href="about.html" title="About me 個人簡介" tabindex="4" lang="en">
                         <div class="loader">
                             <span>A</span>
                             <span class="span2">B</span>
@@ -88,10 +88,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio.html" title="Web Design" tabindex="4" lang="en">
+                    <a href="portfolio.html" title="UI Design 使用者介面設計作品" tabindex="4" lang="en">
                         <div class="loader active">
-                            <span>U</span>
-                            <span class="span2">I</span>
+                            <span>
+                                <abbr lang="en" title="User Interface">UI</abbr>
+                            </span>
                             <span class="span4"> </span>
                             <span class="span4">D</span>
                             <span class="span5">E</span>
@@ -103,7 +104,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" title="Graphic Design" tabindex="4" lang="en">
+                    <a href="graphic.html" title="Graphic Design 平面設計作品" tabindex="4" lang="en">
                         <div class="loader">
                             <span>G</span>
                             <span class="span2">R</span>
@@ -123,7 +124,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.heyshow.com/gallery/16674/artworks/" title="Painting" tabindex="4" lang="en">
+                    <a href="painting.html" title="Painting 繪畫設計作品" tabindex="4" lang="en">
                         <div class="loader">
                             <span>P</span>
                             <span class="span2">A</span>
@@ -137,7 +138,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" title="Please feel free to contact me if you have any questions." tabindex="4" lang="en">
+                    <a href="contact.html" title="Contact me 聯絡我們" tabindex="4" lang="en">
                         <div class="loader">
                             <span>C</span>
                             <span class="span2">O</span>
@@ -146,6 +147,19 @@
                             <span class="span5">A</span>
                             <span class="span6">C</span>
                             <span class="span7">T</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.html" title="Sitemap 網站導覽" lang="en">
+                        <div class="loader">
+                            <span>S</span>
+                            <span class="span2">I</span>
+                            <span class="span3">T</span>
+                            <span class="span4">E</span>
+                            <span class="span5">M</span>
+                            <span class="span6">A</span>
+                            <span class="span7">P</span>
                         </div>
                     </a>
                 </li>
@@ -161,14 +175,17 @@
 <article id="my_portfolio">
 <h2>
     <b>02.</b>
-    <i>網頁設計作品集</i>
-    <u>PORTFOLIO</u>
+    <i>介面設計作品</i>
+    <u>UI DESIGN</u>
 </h2>
 <section id="portfolio" class="container">
     <ul class="portfolio-filter">
+        <a accesskey="T" id="accesskey_T" href="#accesskey_T" title=" [Alt+T]僅出現於UI Design、Graphic Design、Painting網頁，此區塊呈現網頁頁籤按鈕。">
+            <span>:::</span>
+        </a>
         <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".WEDDESIGN">WEB DESIGN</a></li>
-        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".APPUIDESIGN">APP UI DESIGN</a></li>
-        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".EDM">BANNER / EDM</a></li>
+        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".APPUIDESIGN"><abbr lang="en" title="Application">APP</abbr> <abbr lang="en" title="User Interface">UI</abbr> DESIGN</a></li>
+        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".EDM">BANNER / <abbr lang="en" title="Electronic Direct Mail">EDM</abbr></a></li>
         <!--class="btn btn-default" href="#" data-filter="*">ALL IMAGES-->
     </ul>
     <!--/#portfolio-filter-->
@@ -184,7 +201,7 @@
                 </a>
             </div>
         </li>
-        <li class="portfolio-item WEDDESIGN">
+        <!--li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
                 <a tabindex="6" class="overlay" title="Humanrights Theme Website" href="images/portfolio/web/2018/humanrights_cy.jpg" data-fancybox="Humanrights">
                     <img src="images/portfolio/web_s/2018/humanrights_cy.jpg" alt="Humanrights Theme Website">
@@ -195,7 +212,7 @@
                 </a>
                 <a title="Humanrights Theme Website" href="images/portfolio/web/2018/humanrights_cy.jpg" data-fancybox="Humanrights"></a>
             </div>
-        </li>
+        </li-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
                 <a tabindex="6" class="overlay" title="Architectural Theme Website" href="images/portfolio/web/2018/Architectural-Theme-Website.jpg" data-fancybox="Architectural">
@@ -205,7 +222,6 @@
                         <b>Architectural</b>
                     </span>
                 </a>
-                <a title="Architectural Theme Website" href="images/portfolio/web/2018/Architectural-Theme-Website.jpg" data-fancybox="Architectural"></a>
             </div>
         </li>
         <li class="portfolio-item WEDDESIGN">
@@ -217,7 +233,6 @@
                         <b>Neighborhood Network</b>
                     </span>
                 </a>
-                <a title="Neighborhood Network" href="images/portfolio/web/2018/li-Taipei-Website.jpg" data-fancybox="Neighborhood"></a>
             </div>
         </li>
         <li class="portfolio-item WEDDESIGN">
@@ -245,7 +260,8 @@
         <!--/.portfolio-item-->
         <li class="portfolio-item APPUIDESIGN">
             <div class="item-inner">
-                <a tabindex="7" class="overlay" title="貓奴論壇(另開新視窗)" href="http://www.alan-lin.com/app/cat_web/index.html" target="_blank">
+                <!--a tabindex="7" class="overlay" title="貓奴論壇(另開新視窗)" href="http://www.alan-lin.com/app/cat_web/index.html" target="_blank"-->
+                <a tabindex="6" class="overlay" title="menya634" href="images/portfolio/web/app/cat_app.jpg" data-fancybox="catapp">
                     <img src="images/portfolio/web_s/app/cat_app.jpg" alt="貓奴論壇">
                     <span>
                         <u>3 June 2017</u>
@@ -264,8 +280,8 @@
                         <b>menya634</b>
                     </span>
                 </a>
-                <a title="menya634" href="images/portfolio/web/2013/menya634/menya634_index_var1_2.jpg" data-fancybox="menya634"></a>
-                <a title="menya634" href="images/portfolio/web/2013/menya634/menya634_inside_var1.jpg" data-fancybox="menya634"></a>
+                <a title="menya634" href="images/portfolio/web/2013/menya634/menya634_index_var1_2.jpg" data-fancybox="menya634">menya634</a>
+                <a title="menya634" href="images/portfolio/web/2013/menya634/menya634_inside_var1.jpg" data-fancybox="menya634">menya634</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -278,7 +294,7 @@
                         <b>FALKEN</b>
                     </span>
                 </a>
-                <a title="FALKEN" href="images/portfolio/web/2013/FALKEN/FALKEN_index_var2_1.jpg" data-fancybox="FALKEN"></a>
+                <a title="FALKEN" href="images/portfolio/web/2013/FALKEN/FALKEN_index_var2_1.jpg" data-fancybox="FALKEN">FALKEN</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -291,13 +307,13 @@
                         <b>異國設計</b>
                     </span>
                 </a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/1exotica_inside_var4.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/3exotica_inside_var4_sub.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/4exotica_inside_var4_content.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/5exotica_mobile_var1_index.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/6exotica_mobile_var1_list.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/7exotica_mobile_var1_sub_list.jpg" data-fancybox="exotica"></a>
-                <a title="異國設計" href="images/portfolio/web/2013/exotica/8exotica_mobile_var1_work_content.jpg" data-fancybox="exotica"></a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/1exotica_inside_var4.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/3exotica_inside_var4_sub.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/4exotica_inside_var4_content.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/5exotica_mobile_var1_index.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/6exotica_mobile_var1_list.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/7exotica_mobile_var1_sub_list.jpg" data-fancybox="exotica">異國設計</a>
+                <a title="異國設計" href="images/portfolio/web/2013/exotica/8exotica_mobile_var1_work_content.jpg" data-fancybox="exotica">異國設計</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -310,8 +326,8 @@
                             <b>科技企業</b>
                         </span>
                     </a>
-                    <a title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_inside_var2.jpg" data-fancybox="educationvideo"></a>
-                    <a title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_inside_var6.jpg" data-fancybox="educationvideo"></a>
+                    <a title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_inside_var2.jpg" data-fancybox="educationvideo">科技企業</a>
+                    <a title="科技企業" href="images/portfolio/web/2013/educationvideo/educationvideo_inside_var6.jpg" data-fancybox="educationvideo">科技企業</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -324,9 +340,9 @@
                         <b>hwacom</b>
                     </span>
                 </a>
-                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_1hover.jpg" data-fancybox="hwacom"></a>
-                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_2.jpg" data-fancybox="hwacom"></a>
-                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_inside_var11.jpg" data-fancybox="hwacom"></a>
+                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_1hover.jpg" data-fancybox="hwacom">hwacom</a>
+                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_index_var14_2.jpg" data-fancybox="hwacom">hwacom</a>
+                <a title="hwacom" href="images/portfolio/web/2012/hwacom/hwacom_inside_var11.jpg" data-fancybox="hwacom">hwacom</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -339,10 +355,10 @@
                         <b>Meerkat</b>
                     </span>
                 </a>
-                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_3.jpg" data-fancybox="Meerkat"></a>
-                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_6.jpg" data-fancybox="Meerkat"></a>
-                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_8.jpg" data-fancybox="Meerkat"></a>
-                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_62.jpg" data-fancybox="Meerkat"></a>
+                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_3.jpg" data-fancybox="Meerkat">Meerkat</a>
+                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_6.jpg" data-fancybox="Meerkat">Meerkat</a>
+                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_8.jpg" data-fancybox="Meerkat">Meerkat</a>
+                <a title="Meerkat" href="images/portfolio/web/2012/Meerkat/Meerkat_index_var5_62.jpg" data-fancybox="Meerkat">Meerkat</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -415,28 +431,28 @@
                     <b>瑞瑩設計工程</b>
                 </span>
                 </a>
-                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var7.jpg" data-fancybox="ruiying"></a>
-                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var6.jpg" data-fancybox="ruiying"></a>
-                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_inside_var6.jpg" data-fancybox="ruiying"></a>
-                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_inside_var8.jpg" data-fancybox="ruiying"></a>
+                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var7.jpg" data-fancybox="ruiying">瑞瑩設計工程</a>
+                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_index_var6.jpg" data-fancybox="ruiying">瑞瑩設計工程</a>
+                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_inside_var6.jpg" data-fancybox="ruiying">瑞瑩設計工程</a>
+                <a title="瑞瑩設計工程" href="images/portfolio/web/2012/ruiying/ruiying_inside_var8.jpg" data-fancybox="ruiying">瑞瑩設計工程</a>
             </div>
         </li>
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a tabindex="6" class="overlay" title="皇室" href="images/portfolio/web/2012/royal/003.jpg" data-fancybox="royal">
-                    <img src="images/portfolio/web_s/2012/royal/003.jpg" alt="皇室">
+                <a tabindex="6" class="overlay" title="皇室羽絨" href="images/portfolio/web/2012/royal/003.jpg" data-fancybox="royal">
+                    <img src="images/portfolio/web_s/2012/royal/003.jpg" alt="皇室羽絨">
                     <span>
                         <u>JUNE 2012</u>
-                        <b>皇室</b>
+                        <b>皇室羽絨</b>
                     </span>
                 </a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/001.jpg" data-fancybox="royal"></a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/002.jpg" data-fancybox="royal"></a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/004.jpg" data-fancybox="royal"></a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/005.jpg" data-fancybox="royal"></a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/006.jpg" data-fancybox="royal"></a>
-                <a title="皇室" href="images/portfolio/web/2012/royal/007.jpg" data-fancybox="royal"></a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/001.jpg" data-fancybox="royal">皇室羽絨</a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/002.jpg" data-fancybox="royal">皇室羽絨</a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/004.jpg" data-fancybox="royal">皇室羽絨</a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/005.jpg" data-fancybox="royal">皇室羽絨</a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/006.jpg" data-fancybox="royal">皇室羽絨</a>
+                <a title="皇室羽絨" href="images/portfolio/web/2012/royal/007.jpg" data-fancybox="royal">皇室羽絨</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -450,8 +466,8 @@
                         <b>格林管理顧問 格寧管理諮詢</b>
                     </span>
                 </a>
-                <a title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_index_var8_o.jpg" data-fancybox="gamc"></a>
-                <a title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_inside_var2.jpg" data-fancybox="gamc"></a>
+                <a title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_index_var8_o.jpg" data-fancybox="gamc">格林管理顧問 格寧管理諮詢</a>
+                <a title="格林管理顧問 格寧管理諮詢" href="images/portfolio/web/2012/gamc/gamc_inside_var2.jpg" data-fancybox="gamc">格林管理顧問 格寧管理諮詢</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -464,8 +480,8 @@
                         <b>相簿 APP UI 設計</b>
                     </span>
                 </a>
-                <a title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_1-1.jpg" data-fancybox="DSC"></a>
-                <a title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_6-20.jpg" data-fancybox="DSC"></a>
+                <a title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_1-1.jpg" data-fancybox="DSC">相簿 APP UI 設計</a>
+                <a title="相簿 APP UI 設計" href="images/portfolio/web/2012/DSC/DSC_APPDESIGN_6-20.jpg" data-fancybox="DSC">相簿 APP UI 設計</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -478,9 +494,9 @@
                         <b>鎮翔國際設計工程</b>
                     </span>
                 </a>
-                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_Engineering_index_var1.jpg" data-fancybox="city"></a>
-                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_index_var2 (2).jpg" data-fancybox="city"></a>
-                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_index_var2.jpg" data-fancybox="city"></a>
+                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_Engineering_index_var1.jpg" data-fancybox="city">鎮翔國際設計工程</a>
+                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_index_var2 (2).jpg" data-fancybox="city">鎮翔國際設計工程</a>
+                <a title="鎮翔國際設計工程" href="images/portfolio/web/2012/city/city-design_index_var2.jpg" data-fancybox="city">鎮翔國際設計工程</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -494,12 +510,12 @@
                         <b>晶虹生醫科技</b>
                     </span>
                 </a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_2.jpg" data-fancybox="antrodia"></a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_3.jpg" data-fancybox="antrodia"></a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_HEALTH_1.jpg" data-fancybox="antrodia"></a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_HEALTH.jpg" data-fancybox="antrodia"></a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_PRODUCTS_1.jpg" data-fancybox="antrodia"></a>
-                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_PRODUCTS_2.jpg" data-fancybox="antrodia"></a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_2.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_index_var6_3.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_HEALTH_1.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_HEALTH.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_PRODUCTS_1.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
+                <a title="晶虹生醫科技" href="images/portfolio/web/2012/antrodia/antrodia_inside_var3_PRODUCTS_2.jpg" data-fancybox="antrodia">晶虹生醫科技</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -524,7 +540,7 @@
                         <b>HANA錵鐵板燒</b>
                     </span>
                 </a>
-                <a title="HANA錵鐵板燒" href="images/portfolio/web/edm/01_twinpeak_640x260.jpg" data-fancybox="HANA" ></a>
+                <a title="HANA錵鐵板燒" href="images/portfolio/web/edm/01_twinpeak_640x260.jpg" data-fancybox="HANA">HANA錵鐵板燒</a>
             </div>
         </li>
         <!--/.portfolio-item 2012-->
@@ -537,7 +553,7 @@
                         <b>遠傳活動 電信費輕鬆繳</b>
                     </span>
                 </a>
-                <a title="遠傳活動 電信費輕鬆繳" href="images/portfolio/web/edm/ebill640x280.jpg" data-fancybox="ebill"></a> 
+                <a title="遠傳活動 電信費輕鬆繳" href="images/portfolio/web/edm/ebill640x280.jpg" data-fancybox="ebill">遠傳活動 電信費輕鬆繳</a> 
             </div>
         </li>
         <!--/.portfolio-item 2012-->
@@ -550,7 +566,7 @@
                         <b>三義鄉農會</b>
                     </span>
                 </a>
-                <a title="三義鄉農會" href="images/portfolio/web/edm/20120427.jpg" data-fancybox="ebill"></a>
+                <a title="三義鄉農會" href="images/portfolio/web/edm/20120427.jpg" data-fancybox="20120427">三義鄉農會</a>
             </div>
         </li>
         <!--/.portfolio-item 2012-->
@@ -563,18 +579,18 @@
                         <b>藝企相投 國樂贈票活動</b>
                     </span>
                 </a>
-                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/mEDM2.jpg" data-fancybox="spm"></a>
-                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/m500x500.jpg" data-fancybox="spm"></a>
+                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/mEDM2.jpg" data-fancybox="spm">藝企相投 國樂贈票活動 EDM</a>
+                <a title="藝企相投 國樂贈票活動" href="images/portfolio/web/edm/m500x500.jpg" data-fancybox="spm">藝企相投 國樂贈票活動 海報</a>
             </div>
         </li>
         <!--/.portfolio-item 2012-->
         <li class="portfolio-item EDM">
             <div class="item-inner">
-                <a tabindex="8" class="overlay" title="銀行公會EDM_NOV" href="images/portfolio/web/edm/edm_Nov2.jpg" data-fancybox="edm_Nov2">
-                    <img src="images/portfolio/web_s/edm/edm_Nov2.jpg" alt="銀行公會EDM_NOV">
+                <a tabindex="8" class="overlay" title="銀行公會EDM" href="images/portfolio/web/edm/edm_Nov2.jpg" data-fancybox="edm_Nov2">
+                    <img src="images/portfolio/web_s/edm/edm_Nov2.jpg" alt="銀行公會EDM">
                     <span>
                         <u>2 November 2012</u>
-                        <b>銀行公會EDM_NOV</b>
+                        <b>銀行公會EDM</b>
                     </span>
                 </a>
             </div>
@@ -625,41 +641,41 @@
                             <b>HOME DESIGN</b>
                         </span>
                     </a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_1.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_2.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_3.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_4.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_1.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_2.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_3.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_4.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_5.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_6.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_7.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_8.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
-                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_9.jpg" data-fancybox="Home_Design" title="HOME DESIGN"></a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_1.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_2.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_3.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_index_ver10_4.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_1.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_2.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_3.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_4.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_5.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_6.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_7.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_8.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
+                    <a href="images/portfolio/web/2011/Home_Design10/Home_Design_inside_ver10_9.jpg" data-fancybox="Home_Design" title="HOME DESIGN">HOME DESIGN</a>
             </div>
         </li>
         <!--/.portfolio-item-->
         <li class="portfolio-item WEDDESIGN">
             <div class="item-inner">
-                <a tabindex="6" class="weblink" href="http://www.aurogem.com.tw/" target="_blank">AUROGEM JEWELAY WEB SITE</a>
-                <a tabindex="6" class="overlay" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" data-fancybox="AUROGEM">
+                <a title="AUROGEM JEWELAY WEB SITE" tabindex="6" class="weblink" href="http://www.aurogem.com.tw/" target="_blank">AUROGEM JEWELAY WEB SITE</a>
+                <a title="AUROGEM JEWELAY WEB SITE" tabindex="6" class="overlay" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" data-fancybox="AUROGEM">
                     <img src="images/portfolio/web_s/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_index_ver3.jpg" alt="AUROGEM JEWELAY">
                     <span>
                         <u>JUNE 2011</u>
                         <b>AUROGEM JEWELAY</b>
                     </span>
                 </a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_1-1.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_1-2.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_2.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_3.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_4.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_5.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_6.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_7.jpg" data-fancybox="AUROGEM"></a>
-                <a href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_8.jpg" data-fancybox="AUROGEM"></a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_1-1.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_1-2.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_2.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_3.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_4.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_5.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_6.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_7.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
+                <a title="AUROGEM JEWELAY" href="images/portfolio/web/2011/AUROGEM_JEWELAY/AUROGEM_JEWELAY_inside_ver14_8.jpg" data-fancybox="AUROGEM">AUROGEM JEWELAY</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -669,23 +685,26 @@
 </article>
     </main><!--#content以上內容區-->
     <footer id="fatfooter">
-        <a accesskey="Z" id="accesskey_Z" href="#accesskey_Z" title="[Alt+Z]頁尾下方選單連結區，此區塊列有[facebook]、[linkedin]、[instagram]、[behance]、[youtube]、[pinterest]、[twitter]等連結">
-            <span>:::</span>
-        </a>
         <div class="container">
         <ul id="community">
-            <li><a href="https://www.facebook.com/r7a1984" class="icon-facebook" target="_blank" title="連結至我的facebook(另開新視窗)"></a></li>
-            <li><a href="https://www.linkedin.com/in/wei-ching-lin/" target="_blank" title="連結至我的linkedin(另開新視窗)" class="icon-linkedin2"></a></li>
-            <li><a href="https://www.instagram.com/alanlin623/" target="_blank" title="連結至我的instagram(另開新視窗)" class="icon-instagram"></a></li>
-            <li><a href="https://www.behance.net/r7a19840f0a" target="_blank" title="連結至我的behance(另開新視窗)" class="icon-behance"></a></li>
-            <li><a href="https://www.youtube.com/user/r7a1984" target="_blank" title="連結至我的youtube(另開新視窗)" class="icon-youtube"></a></li>
-            <li><a href="https://www.pinterest.com/alan0623/" target="_blank" title="連結至我的pinterest(另開新視窗)" class="icon-pinterest"></a></li>
-            <li><a href="https://twitter.com/r7a1984" target="_blank" title="連結至我的twitter(另開新視窗)" class="icon-twitter"></a></li>
-            <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"></a></li>
+            <a accesskey="Z" id="accesskey_Z" href="#accesskey_Z" title="[Alt+Z]頁尾下方選單連結區，此區塊列有[facebook]、[linkedin]、[instagram]、[behance]、[youtube]、[pinterest]、[twitter]等連結">
+                <span>:::</span>
+            </a>
+            <li><a href="https://www.facebook.com/r7a1984" class="icon-facebook" target="_blank" title="連結至我的facebook(另開新視窗)"><b>facebook</b></a></li>
+            <li><a href="https://www.linkedin.com/in/wei-ching-lin/" target="_blank" title="連結至我的linkedin(另開新視窗)" class="icon-linkedin2"><b>linkedin</b></a></li>
+            <li><a href="https://www.instagram.com/alanlin623/" target="_blank" title="連結至我的instagram(另開新視窗)" class="icon-instagram"><b>instagram</b></a></li>
+            <li><a href="https://www.behance.net/r7a19840f0a" target="_blank" title="連結至我的behance(另開新視窗)" class="icon-behance"><b>behance</b></a></li>
+            <li><a href="https://www.youtube.com/user/r7a1984" target="_blank" title="連結至我的youtube(另開新視窗)" class="icon-youtube"><b>youtube</b></a></li>
+            <li><a href="https://www.pinterest.com/alan0623/" target="_blank" title="連結至我的pinterest(另開新視窗)" class="icon-pinterest"><b>pinterest</b></a></li>
+            <li><a href="https://twitter.com/r7a1984" target="_blank" title="連結至我的twitter(另開新視窗)" class="icon-twitter"><b>twitter</b></a></li>
+            <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"><b>trello</b></a></li>
         </ul><!--#community-->
         <ul id="sitemap">
+            <a accesskey="X" id="accesskey_X" href="#accesskey_X" title="[Alt+X]頁尾下方資訊式頁尾連結區，此區塊列有網站導覽連結。">
+                <span>:::</span>
+            </a>
             <li>
-                <a href="about.html" class="button_language" data-text="ABOUT" title="About me" lang="en">
+                <a href="about.html" class="button_language" data-text="ABOUT" title="About me 個人簡介" lang="en">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
@@ -694,9 +713,10 @@
                 </a>
             </li>
             <li>
-                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design" lang="en">
-                    <span>U</span>
-                    <span>I</span>
+                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design 使用者介面設計作品" lang="en">
+                    <span>
+                        <abbr lang="en" title="User Interface">UI</abbr>
+                    </span>
                     <span></span>
                     <span>D</span>
                     <span>E</span>
@@ -707,7 +727,7 @@
                 </a>
             </li>
             <li>
-                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design" lang="en">
+                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design 平面設計作品" lang="en">
                     <span>G</span>
                     <span>R</span>
                     <span>A</span>
@@ -725,7 +745,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.heyshow.com/gallery/16674/artworks/" class="button_language" data-text="PAINTER" title="Painter" target="_blank" lang="en">
+                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">
                     <span>P</span>
                     <span>A</span>
                     <span>I</span>
@@ -737,7 +757,7 @@
                 </a>
             </li>
              <li>
-                <a href="contact.html" class="button_language" data-text="CONTACT" title="Please feel free to contact me if you have any questions." lang="en">
+                <a href="contact.html" class="button_language" data-text="CONTACT" title="Contact me 聯絡我們" lang="en">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>
@@ -745,6 +765,17 @@
                     <span>A</span>
                     <span>C</span>
                     <span>T</span>
+                </a>
+            </li>
+            <li>
+                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="Sitemap 網站導覽" lang="en">
+                    <span>S</span>
+                    <span>I</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>P</span>
                 </a>
             </li>
         </ul>

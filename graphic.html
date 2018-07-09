@@ -2,9 +2,8 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>林位青 個人網站 Alan Lin Portfolio Website - 平面設計作品集 Graphic Design Portfolio</title>
+    <title>林位青 個人網站 Alan Lin Portfolio Website - 平面設計作品 Graphic Design Portfolio</title>
     <!--IE integration -->
-    
     <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--強迫 IE 在顯示網頁時使用最新的引擎版本-->
     <!--viewport integration -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +76,7 @@
             </a>
             <ul class="nav_style">
                 <li>
-                    <a href="about.html" title="About me" tabindex="4" lang="en">
+                    <a href="about.html" title="About me 個人簡介" tabindex="4" lang="en">
                         <div class="loader">
                             <span>A</span>
                             <span class="span2">B</span>
@@ -88,10 +87,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio.html" title="Web Design" tabindex="4" lang="en">
+                    <a href="portfolio.html" title="UI Design 使用者介面設計作品" tabindex="4" lang="en">
                         <div class="loader">
-                            <span>U</span>
-                            <span class="span2">I</span>
+                            <span>
+                                <abbr lang="en" title="User Interface">UI</abbr>
+                            </span>
                             <span class="span4"> </span>
                             <span class="span4">D</span>
                             <span class="span5">E</span>
@@ -103,7 +103,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" title="Graphic Design" tabindex="4" lang="en">
+                    <a href="graphic.html" title="Graphic Design 平面設計作品" tabindex="4" lang="en">
                         <div class="loader active">
                             <span>G</span>
                             <span class="span2">R</span>
@@ -123,7 +123,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.heyshow.com/gallery/16674/artworks/" title="Painting" tabindex="4" lang="en">
+                    <a href="painting.html" title="Painting 繪畫設計作品" tabindex="4" lang="en">
                         <div class="loader">
                             <span>P</span>
                             <span class="span2">A</span>
@@ -137,7 +137,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" title="Please feel free to contact me if you have any questions." tabindex="4" lang="en">
+                    <a href="contact.html" title="Contact me 聯絡我們" tabindex="4" lang="en">
                         <div class="loader">
                             <span>C</span>
                             <span class="span2">O</span>
@@ -146,6 +146,19 @@
                             <span class="span5">A</span>
                             <span class="span6">C</span>
                             <span class="span7">T</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.html" title="Sitemap 網站導覽" lang="en">
+                        <div class="loader active">
+                            <span>S</span>
+                            <span class="span2">I</span>
+                            <span class="span3">T</span>
+                            <span class="span4">E</span>
+                            <span class="span5">M</span>
+                            <span class="span6">A</span>
+                            <span class="span7">P</span>
                         </div>
                     </a>
                 </li>
@@ -161,16 +174,19 @@
 <article id="my_portfolio">
 <h2>
     <b>03.</b>
-    <i>平面設計作品集</i>
+    <i>平面設計作品</i>
     <u>PORTFOLIO</u>
 </h2>
 <section id="portfolio" class="container">
     <ul class="portfolio-filter">
-        <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".PHILIPS" title="PHILIPS DM">PHILIPS DM</a></li>
-        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".OTHER" title="OTHER DM">OTHER DM</a></li>
-        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".PACKAGEDESIGN" title="PACKAGE DESIGN">PACKAGE DESIGN</a></li>
-        <li><a tabindex="9" class="btn btn-default" href="#" data-filter=".LOGODESIGN" title="LOGO DESIGN">LOGO DESIGN</a></li>
-        <li><a tabindex="10" class="btn btn-default" href="#" data-filter=".DISPLAY" title="DISPLAY">DISPLAY</a></li>
+        <a accesskey="T" id="accesskey_T" href="#accesskey_T" title=" [Alt+T]僅出現於UI Design、Graphic Design、Painting網頁，此區塊呈現網頁頁籤按鈕。">
+            <span>:::</span>
+        </a>
+        <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".PHILIPS" title="PHILIPS 飛利浦">PHILIPS</a></li>
+        <li><a tabindex="7" class="btn btn-default" href="#" data-filter=".OTHER" title="OTHER 其他設計稿">OTHER</a></li>
+        <li><a tabindex="8" class="btn btn-default" href="#" data-filter=".PACKAGEDESIGN" title="PACKAGE DESIGN 包裝設計">PACKAGE DESIGN</a></li>
+        <li><a tabindex="9" class="btn btn-default" href="#" data-filter=".LOGODESIGN" title="LOGO DESIGN 商標設計">LOGO DESIGN</a></li>
+        <li><a tabindex="10" class="btn btn-default" href="#" data-filter=".DISPLAY" title="DISPLAY 展示設計">DISPLAY</a></li>
         <!--li><a class="btn btn-default" href="#" data-filter="*">ALL IMAGES</a></li-->
     </ul><!--/#portfolio-filter-->
     <ul class="portfolio-items col-3 gallery clearfix">
@@ -184,7 +200,7 @@
                         <b>MOLLIE 美甲</b>
                     </span>
                 </a>
-                <a title="MOLLIE 美甲" href="images/portfolio/gd/logo/mollie3-01.jpg" data-fancybox="MOLLIE"></a>
+                <a title="MOLLIE 美甲" href="images/portfolio/gd/logo/mollie3-01.jpg" data-fancybox="MOLLIE">MOLLIE 美甲</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -197,7 +213,7 @@
                         <b>Orcastras 資訊科技</b>
                     </span>
                 </a>
-                <a title="Orcastras 資訊科技" href="images/portfolio/gd/logo/Orcastras_Logo_var2.jpg" data-fancybox="Orcastras"></a>
+                <a title="Orcastras 資訊科技" href="images/portfolio/gd/logo/Orcastras_Logo_var2.jpg" data-fancybox="Orcastras">Orcastras 資訊科技</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -231,19 +247,19 @@
                     <img src="images/portfolio/gd_s/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_9.jpg" alt="台北南港 LED Display">
                     <span>
                         <u>16 March 2010</u>
-                        <b>台北南港 LED Display</b>
+                        <b>台北南港 <abbr lang="en" title="Light Emiting Doide">LED</abbr> Display</b>
                     </span>
                 </a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_8.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_10.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_11.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_1.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_2.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_3.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_4.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_5.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_6.jpg" data-fancybox="PCL_Display_LED"></a>
-                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_7.jpg" data-fancybox="PCL_Display_LED"></a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_8.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_10.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_11.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_1.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_2.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_3.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_4.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_5.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_6.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
+                <a title="台北南港 LED Display" href="images/portfolio/gd/PHILIPS/PCL/PCL_Display_LED/PCL_Display_LED_7.jpg" data-fancybox="PCL_Display_LED">台北南港 LED Display</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -256,8 +272,8 @@
                         <b>Lagostina</b>
                     </span>
                 </a>
-                <a title="Lagostina Postcards" href="images/portfolio/gd/Lagostina/Lagostina_Postcards_12x16cm_9.jpg" data-fancybox="Lagostina"></a>
-                <a title="Lagostina flag" href="images/portfolio/gd/Lagostina/Lagostina_flag_55x195cm_8.jpg" data-fancybox="Lagostina"></a>
+                <a title="Lagostina Postcards" href="images/portfolio/gd/Lagostina/Lagostina_Postcards_12x16cm_9.jpg" data-fancybox="Lagostina">Lagostina Postcards</a>
+                <a title="Lagostina flag" href="images/portfolio/gd/Lagostina/Lagostina_flag_55x195cm_8.jpg" data-fancybox="Lagostina">Lagostina flag</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -270,20 +286,20 @@
                         <b>Tefal 香檳銀不鏽鋼鍋具 吊牌</b>
                     </span>
                 </a>
-                <a title="Tefal 香檳銀不鏽鋼鍋具 吊牌" href="images/portfolio/gd/Tefal/Tefal_HangTag_1.jpg" data-fancybox="HangTag"></a> 
+                <a title="Tefal 香檳銀不鏽鋼鍋具 吊牌" href="images/portfolio/gd/Tefal/Tefal_HangTag_1.jpg" data-fancybox="HangTag">Tefal 香檳銀不鏽鋼鍋具 吊牌</a> 
             </div>
         </li>
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a tabindex="10" class="overlay" title="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" data-fancybox="FDS810">
-                    <img src="images/portfolio/gd_s/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" alt="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM">
+                <a tabindex="10" class="overlay" title="FDS810電子數位式微電腦自動調光防眩護眼檯燈" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" data-fancybox="FDS810">
+                    <img src="images/portfolio/gd_s/PHILIPS/PLT/FDS810/PLT_FDS811_POSM4.jpg" alt="FDS810電子數位式微電腦自動調光防眩護眼檯燈">
                     <span>
                         <u>12 January 2010</u>
-                        <b>FDS810 護眼檯燈POSM</b>
+                        <b>FDS810 護眼檯燈</b>
                     </span>
                 </a>
-                <a title="FDS810電子數位式微電腦自動調光防眩護眼檯燈POSM" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM2.jpg" data-fancybox="FDS810"></a>
+                <a title="FDS810電子數位式微電腦自動調光防眩護眼檯燈" href="images/portfolio/gd/PHILIPS/PLT/FDS810/PLT_FDS811_POSM2.jpg" data-fancybox="FDS810">FDS810電子數位式微電腦自動調光防眩護眼檯燈</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -296,16 +312,16 @@
                         <b>PHILIPS AOCR2010</b>
                     </span>
                 </a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR-luncheon-symposium-survey.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/2010SalesLeadForm_BW.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/0309-AOCR2010_LobbyBanner_120x450cm_ol.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_60x60cm.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_80x205cm2.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_Card_200x145mm.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_Card_200x145mm_9b.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_PreCongressAgenda_A4.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_StairBanner_500x120mm.jpg" data-fancybox="AOCR2010"></a>
-                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_webBanner.jpg" data-fancybox="AOCR2010"></a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR-luncheon-symposium-survey.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/2010SalesLeadForm_BW.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/0309-AOCR2010_LobbyBanner_120x450cm_ol.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_60x60cm.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_80x205cm2.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_Card_200x145mm.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_Card_200x145mm_9b.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_PreCongressAgenda_A4.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_StairBanner_500x120mm.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
+                <a title="PHILIPS AOCR2010" href="images/portfolio/gd/PHILIPS/PLT/AOCR2010/AOCR2010_webBanner.jpg" data-fancybox="AOCR2010">PHILIPS AOCR2010</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -318,8 +334,8 @@
                         <b>PHILIPS Introduction</b>
                     </span>
                 </a>
-                <a title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/PHILIPS_Introduction_A4_13_1.jpg" data-fancybox="Introduction"></a>
-                <a title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/PHILIPS_Introduction_A4_13_2.jpg" data-fancybox="Introduction"></a>
+                <a title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/PHILIPS_Introduction_A4_13_1.jpg" data-fancybox="Introduction">PHILIPS Introduction</a>
+                <a title="PHILIPS Introduction" href="images/portfolio/gd/PHILIPS/PLT/Introduction/PHILIPS_Introduction_A4_13_2.jpg" data-fancybox="Introduction">PHILIPS Introduction</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -332,7 +348,7 @@
                     <b>Tefal TG</b>
                     </span>
                 </a>
-                <a title="Tefal TG" href="images/portfolio/gd/Tefal/Tefal_TG_4.jpg" data-fancybox="Tefal TG"></a>
+                <a title="Tefal TG" href="images/portfolio/gd/Tefal/Tefal_TG_4.jpg" data-fancybox="Tefal TG">Tefal TG</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -345,18 +361,18 @@
                         <b>Allmax ToiletSeat package</b>
                     </span>
                 </a>
-                <a href="images/portfolio/gd/Allmax/0513Allmax_ToiletSeat_12ol.jpg" data-fancybox="Allmax"></a>
-                <a href="images/portfolio/gd/Allmax/Toilet Seat Display Tray Artwork.jpg" data-fancybox="Allmax"></a>
+                <a  title="Allmax ToiletSeat Display Box" href="images/portfolio/gd/Allmax/0513Allmax_ToiletSeat_12ol.jpg" data-fancybox="Allmax">Allmax ToiletSeat Display Box</a>
+                <a  title="Allmax ToiletSeat Display Box" href="images/portfolio/gd/Allmax/Toilet Seat Display Tray Artwork.jpg" data-fancybox="Allmax">Allmax ToiletSeat Display Box</a>
             </div>
         </li>
         <!--/.portfolio-item-->
         <li class="portfolio-item DISPLAY">
             <div class="item-inner">
-                <a tabindex="10" class="overlay" title="PCL壓克力DM架" href="images/portfolio/gd/PHILIPS/PCL/20090819/20090819PCL.jpg" data-fancybox="images">
-                    <img src="images/portfolio/gd_s/PHILIPS/PCL/20090819/20090819PCL.jpg" alt="PCL壓克力DM架">
+                <a tabindex="10" class="overlay" title="PCL壓克力Brochure架" href="images/portfolio/gd/PHILIPS/PCL/20090819/20090819PCL.jpg" data-fancybox="images">
+                    <img src="images/portfolio/gd_s/PHILIPS/PCL/20090819/20090819PCL.jpg" alt="PCL壓克力Brochure架">
                     <span>
                         <u>19 August 2009</u>
-                        <b>PCL壓克力DM架</b>
+                        <b>PCL壓克力Brochure架</b>
                     </span>
                 </a>
             </div>
@@ -371,21 +387,21 @@
                         <b>WEI-FU Pudding Petits</b>
                     </span>
                 </a>
-                <a href="images/portfolio/gd/wf/WF_pudding_Petits_4.jpg" data-fancybox="wf"></a>
+                <a title="WEI-FU Pudding Petits" href="images/portfolio/gd/wf/WF_pudding_Petits_4.jpg" data-fancybox="wf">WEI-FU Pudding Petits</a>
             </div>
         </li>
         <!--/.portfolio-item-->
         <li class="portfolio-item PHILIPS">
             <div class="item-inner">
-                <a tabindex="6" class="overlay" title="PHILIPS 鹵素燈泡DM" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" data-fancybox="EcoClassic30">
-                    <img src="images/portfolio/gd_s/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" alt="PHILIPS 鹵素燈泡DM">
+                <a tabindex="6" class="overlay" title="PHILIPS 鹵素燈泡Brochure" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" data-fancybox="EcoClassic30">
+                    <img src="images/portfolio/gd_s/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_130.jpg" alt="PHILIPS 鹵素燈泡Brochure">
                     <span>
                         <u>20 JULY 2009</u>
-                        <b>PHILIPS 鹵素燈泡DM</b>
+                        <b>PHILIPS 鹵素燈泡Brochure</b>
                     </span>
                 </a>
-                <a title="PHILIPS 鹵素燈泡DM" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_131.jpg" data-fancybox="EcoClassic30"></a>
-                <a title="PHILIPS 鹵素燈泡DM" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_132.jpg" data-fancybox="EcoClassic30"></a>
+                <a title="PHILIPS 鹵素燈泡Brochure" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_131.jpg" data-fancybox="EcoClassic30">PHILIPS 鹵素燈泡Brochure</a>
+                <a title="PHILIPS 鹵素燈泡Brochure" href="images/portfolio/gd/PHILIPS/PLT/EcoClassic30/PLT_EcoClassic30_A4DM_132.jpg" data-fancybox="EcoClassic30">PHILIPS 鹵素燈泡Brochure</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -421,8 +437,8 @@
                         <b>舒適牌黑晶鑽金鋼狼提案</b>
                     </span>
                 </a>
-                <a title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick2.jpg" data-fancybox="Schick"></a>
-                <a title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick1.jpg" data-fancybox="Schick"></a>
+                <a title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick2.jpg" data-fancybox="Schick">舒適牌黑晶鑽金鋼狼提案</a>
+                <a title="舒適牌黑晶鑽金鋼狼提案" href="images/portfolio/gd/Schick/Schick1.jpg" data-fancybox="Schick">舒適牌黑晶鑽金鋼狼提案</a>
             </div>
         </li>
         <!--/.portfolio-item-->
@@ -444,23 +460,26 @@
 </article>
     </main><!--#content以上內容區-->
     <footer id="fatfooter">
-        <a accesskey="Z" id="accesskey_Z" href="#accesskey_Z" title="[Alt+Z]頁尾下方選單連結區，此區塊列有[facebook]、[linkedin]、[instagram]、[behance]、[youtube]、[pinterest]、[twitter]等連結">
-            <span>:::</span>
-        </a>
         <div class="container">
         <ul id="community">
-            <li><a href="https://www.facebook.com/r7a1984" class="icon-facebook" target="_blank" title="連結至我的facebook(另開新視窗)"></a></li>
-            <li><a href="https://www.linkedin.com/in/wei-ching-lin/" target="_blank" title="連結至我的linkedin(另開新視窗)" class="icon-linkedin2"></a></li>
-            <li><a href="https://www.instagram.com/alanlin623/" target="_blank" title="連結至我的instagram(另開新視窗)" class="icon-instagram"></a></li>
-            <li><a href="https://www.behance.net/r7a19840f0a" target="_blank" title="連結至我的behance(另開新視窗)" class="icon-behance"></a></li>
-            <li><a href="https://www.youtube.com/user/r7a1984" target="_blank" title="連結至我的youtube(另開新視窗)" class="icon-youtube"></a></li>
-            <li><a href="https://www.pinterest.com/alan0623/" target="_blank" title="連結至我的pinterest(另開新視窗)" class="icon-pinterest"></a></li>
-            <li><a href="https://twitter.com/r7a1984" target="_blank" title="連結至我的twitter(另開新視窗)" class="icon-twitter"></a></li>
-            <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"></a></li>
+            <a accesskey="Z" id="accesskey_Z" href="#accesskey_Z" title="[Alt+Z]頁尾下方選單連結區，此區塊列有[facebook]、[linkedin]、[instagram]、[behance]、[youtube]、[pinterest]、[twitter]等連結">
+                <span>:::</span>
+            </a>
+            <li><a href="https://www.facebook.com/r7a1984" class="icon-facebook" target="_blank" title="連結至我的facebook(另開新視窗)"><b>facebook</b></a></li>
+            <li><a href="https://www.linkedin.com/in/wei-ching-lin/" target="_blank" title="連結至我的linkedin(另開新視窗)" class="icon-linkedin2"><b>linkedin</b></a></li>
+            <li><a href="https://www.instagram.com/alanlin623/" target="_blank" title="連結至我的instagram(另開新視窗)" class="icon-instagram"><b>instagram</b></a></li>
+            <li><a href="https://www.behance.net/r7a19840f0a" target="_blank" title="連結至我的behance(另開新視窗)" class="icon-behance"><b>behance</b></a></li>
+            <li><a href="https://www.youtube.com/user/r7a1984" target="_blank" title="連結至我的youtube(另開新視窗)" class="icon-youtube"><b>youtube</b></a></li>
+            <li><a href="https://www.pinterest.com/alan0623/" target="_blank" title="連結至我的pinterest(另開新視窗)" class="icon-pinterest"><b>pinterest</b></a></li>
+            <li><a href="https://twitter.com/r7a1984" target="_blank" title="連結至我的twitter(另開新視窗)" class="icon-twitter"><b>twitter</b></a></li>
+            <li><a href="https://trello.com/b/yTomuGWK/alans-work-list" target="_blank" title="連結至我的trello(另開新視窗)" class="icon-trello"><b>trello</b></a></li>
         </ul><!--#community-->
         <ul id="sitemap">
+            <a accesskey="X" id="accesskey_X" href="#accesskey_X" title="[Alt+X]頁尾下方資訊式頁尾連結區，此區塊列有網站導覽連結。">
+                <span>:::</span>
+            </a>
             <li>
-                <a href="about.html" class="button_language" data-text="ABOUT" title="About me" lang="en">
+                <a href="about.html" class="button_language" data-text="ABOUT" title="About me 個人簡介" lang="en">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
@@ -469,9 +488,10 @@
                 </a>
             </li>
             <li>
-                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design" lang="en">
-                    <span>U</span>
-                    <span>I</span>
+                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design 使用者介面設計作品" lang="en">
+                    <span>
+                        <abbr lang="en" title="User Interface">UI</abbr>
+                    </span>
                     <span></span>
                     <span>D</span>
                     <span>E</span>
@@ -482,7 +502,7 @@
                 </a>
             </li>
             <li>
-                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design" lang="en">
+                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design 平面設計作品" lang="en">
                     <span>G</span>
                     <span>R</span>
                     <span>A</span>
@@ -500,7 +520,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.heyshow.com/gallery/16674/artworks/" class="button_language" data-text="PAINTER" title="Painter" target="_blank" lang="en">
+                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">
                     <span>P</span>
                     <span>A</span>
                     <span>I</span>
@@ -512,7 +532,7 @@
                 </a>
             </li>
              <li>
-                <a href="contact.html" class="button_language" data-text="CONTACT" title="Please feel free to contact me if you have any questions." lang="en">
+                <a href="contact.html" class="button_language" data-text="CONTACT" title="Contact me 聯絡我們" lang="en">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>

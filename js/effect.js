@@ -7,21 +7,8 @@ $(document).ready(function () {
     console.log("      00      000  00  00   00   00 0  00")
     console.log("     00       000  00  00   00   000   00")
     console.log("    00        000  00   0000  00 00    00")
-    /*$("area[rel^='prettyPhoto']").prettyPhoto();
-    $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'normal', theme: 'dark_rounded', slideshow: 3000, autoplay_slideshow: false });
-    $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'fast', slideshow: 10000, hideflash: true });
-
-    $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
-        custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
-        changepicturecallback: function () { initialize(); }
-    });
-
-    $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
-        custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
-        changepicturecallback: function () { _bsap.exec(); }
-    });*/
-    // Init fancyBox
-    $().fancybox({
+    
+    $('.portfolio-item .item-inner a,.form_list .instant_messaging li a').fancybox({
         selector: '[data-fancybox="filter"]:visible',
         thumbs: {
             autoStart: true
@@ -51,6 +38,9 @@ jQuery(function ($) {
     $(window).load(function () {
 
         $portfolio_selectors = $('.portfolio-filter >li>a');
+        $portfolio_selectors.focus(function () {
+            $(this).click();
+        });
         if ($portfolio_selectors != 'undefined') {
             $portfolio = $('.portfolio-items');
             $portfolio.isotope({ filter: ".WEDDESIGN" });
@@ -155,4 +145,14 @@ document.addEventListener('mousemove', function (e) {
     var ay = (window.innerHeight / 2 - ypos) / 10;
 
     //sentence.style.transform = 'rotateY(' + ax + 'deg) rotateX(' + ay + 'deg)';
+});
+/*------------------------------------------------------------------
+jfontsize 2.0 網頁字型大小縮放jQuery套件
+------------------------------------------------------------------*/
+$(function(){
+    $('#content').jfontsize({
+        btnMinusMaxHits: 1, // 最多可被縮小的次數
+        btnPlusMaxHits: 5, // 最多可被放大的次數
+        sizeChange: 5 // 每次縮放字體變化像素
+    });
 });

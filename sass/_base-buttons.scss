@@ -28,7 +28,7 @@
 	text-decoration:none;
 	background:-moz-linear-gradient( center top, #ffffff 5%, #f0f0f0 100% );
 	background:-ms-linear-gradient( top, #ffffff 5%, #f0f0f0 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0');
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0');
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffffff), color-stop(100%, #f0f0f0) );
 	background-color:#ffffff;
 	color:#4d4d4d;
@@ -257,7 +257,7 @@
     font-weight: bold;
   }
   h2 {
-    font-weight: thin;
+    font-weight: normal;
   }
 }
 

@@ -2,9 +2,8 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>林位青 個人網站 Alan Lin Portfolio Website - Public Works Department</title>
+    <title>林位青 個人網站 Alan Lin Portfolio Website - 繪畫設計作品 Painting Portfolio</title>
     <!--IE integration -->
-    
     <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--強迫 IE 在顯示網頁時使用最新的引擎版本-->
     <!--viewport integration -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,13 +42,23 @@
      <!--[if gte IE 9]><!-->
     <link rel="stylesheet" href="css/all_page_ui.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/about.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
     <!--<![endif]-->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="css/indexIE.css" type="text/css">
     <![endif]--> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110855928-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110855928-1');
+    </script>
 </head><!--/head-->
 <body class="no_js">
     <a href="#content" id="gotocenter" title="跳到主要內容區塊" tabindex="1" class="sr-only">跳到主要內容區塊</a>
@@ -61,14 +70,13 @@
         <div id="head_bar">
         <a id="logo" href="index.html" tabindex="2" title="回首頁"><h1>Alan Lin</h1></a>
         <label title="主要選單" class="open_nav" for="main_menu"><b>MENU</b><span class="icon"><h2 title="主要選單">主要選單</h2></span></label>
-        
         <nav class="main_menu">
-            <a accesskey="M" id="accesskey_M" href="#accesskey_M" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
+            <a accesskey="M" id="accesskey_M" href="#accesskey_M" tabindex="3" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
                 <span>:::</span>
             </a>
             <ul class="nav_style">
                 <li>
-                    <a href="about.html" title="About me 個人簡介" lang="en">
+                    <a href="about.html" title="About me 個人簡介" tabindex="4" lang="en">
                         <div class="loader">
                             <span>A</span>
                             <span class="span2">B</span>
@@ -79,8 +87,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio.html" title="UI Design 使用者介面設計作品" lang="en">
-                        <div class="loader active">
+                    <a href="portfolio.html" title="UI Design 使用者介面設計作品" tabindex="4" lang="en">
+                        <div class="loader">
                             <span>
                                 <abbr lang="en" title="User Interface">UI</abbr>
                             </span>
@@ -95,8 +103,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="graphic.html" title="Graphic Design 平面設計作品" lang="en">
-                        <div class="loader">
+                    <a href="graphic.html" title="Graphic Design 平面設計作品" tabindex="4" lang="en">
+                        <div class="loader active">
                             <span>G</span>
                             <span class="span2">R</span>
                             <span class="span3">A</span>
@@ -115,7 +123,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="painting.html" title="Painting 繪畫設計作品" lang="en">
+                    <a href="painting.html" title="Painting 繪畫設計作品" tabindex="4" lang="en">
                         <div class="loader">
                             <span>P</span>
                             <span class="span2">A</span>
@@ -129,7 +137,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" title="Contact me 聯絡我們" lang="en">
+                    <a href="contact.html" title="Contact me 聯絡我們" tabindex="4" lang="en">
                         <div class="loader">
                             <span>C</span>
                             <span class="span2">O</span>
@@ -143,7 +151,7 @@
                 </li>
                 <li>
                     <a href="sitemap.html" title="Sitemap 網站導覽" lang="en">
-                        <div class="loader">
+                        <div class="loader active">
                             <span>S</span>
                             <span class="span2">I</span>
                             <span class="span3">T</span>
@@ -160,21 +168,40 @@
         </div><!--#head_bar-->
     </header>
     <main id="content"><!--#main_content以下內容區-->
-        <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容" style="top:-60px;">
+    <a accesskey="C" id="accesskey_C" href="#accesskey_C" tabindex="5" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
+        <span>:::</span>
+    </a>
+<article id="my_portfolio">
+<h2>
+    <b>04.</b>
+    <i>繪畫設計作品</i>
+    <u>PAINTING</u>
+</h2>
+<section id="portfolio" class="container">
+    <ul class="portfolio-filter">
+        <a accesskey="T" id="accesskey_T" href="#accesskey_T" title=" [Alt+T]僅出現於UI Design、Graphic Design、Painting網頁，此區塊呈現網頁頁籤按鈕。">
             <span>:::</span>
         </a>
-        <article id="contact_me">
-            <h2>
-                <b>02.</b>
-                <i>使用者介面設計作品</i>
-                <u>UI DESIGN</u>
-            </h2>
-            <section>
-                <img src="images/portfolio/web/2018/Public-Works-Department.jpg" width="100%" alt="Public Works Department">
-            </section>
-
-            <!--#graphic_design-->
-        </article>
+        <li><a tabindex="6" class="btn btn-default active" href="#" data-filter=".PAINTER" title="PAINTER">PAINTER</a></li>
+        <!--li><a class="btn btn-default" href="#" data-filter="*">ALL IMAGES</a></li-->
+    </ul><!--/#portfolio-filter-->
+    <ul class="portfolio-items col-3 gallery clearfix">
+        <!--/.portfolio-item-->
+        <li class="portfolio-item PAINTER">
+            <div class="item-inner">
+                <a tabindex="6" class="overlay" title="人像繪畫" href="images/portfolio/painter/011_010.jpg" data-fancybox="AOCR2010">
+                    <img src="images/portfolio//painter_s/011_010.jpg" alt="人像繪畫">
+                    <span>
+                        <u>28 December 2009</u>
+                        <b>人像繪畫</b>
+                    </span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--/#portfolio-->
+</article>
     </main><!--#content以上內容區-->
     <footer id="fatfooter">
         <div class="container">
@@ -237,8 +264,7 @@
                 </a>
             </li>
             <li>
-                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank"
-                    lang="en">
+                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">
                     <span>P</span>
                     <span>A</span>
                     <span>I</span>
@@ -260,34 +286,24 @@
                     <span>T</span>
                 </a>
             </li>
-            <li>
-                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="Sitemap 網站導覽" lang="en">
-                    <span>S</span>
-                    <span>I</span>
-                    <span>T</span>
-                    <span>E</span>
-                    <span>M</span>
-                    <span>A</span>
-                    <span>P</span>
-                </a>
-            </li>
         </ul>
         <!--#sitemap-->
         <div class="copyright">COPYRIGHT &#169; 2017 <b>Alan Lin</b></div>
         </div>
     </footer>  
 <script src="js/jquery-latest.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
 <script src="js/effect.js"></script>
 <script>
-$(window).scroll(function(){
-    var scrollVal = $(this).scrollTop();
-    var adscrtop=60;
-        if(scrollVal>adscrtop){
-            $("#head").css({"background": "white"});
-        }else{
-            $("#head").css({"background": "none"});
-        }
-});
+    jQuery(function ($) {
+        $(window).load(function () {
+            $portfolio_selectors = $('.portfolio-filter >li>a');
+            if ($portfolio_selectors != 'undefined') {
+                $portfolio.isotope({ filter: ".PAINTER" });
+            };
+        });
+    });
 </script>
 </body>
 </html>
