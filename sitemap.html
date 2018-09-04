@@ -64,7 +64,7 @@
 <!--/head-->
 
 <body class="no_js">
-    <a href="#content" id="gotocenter" title="跳到主要內容區塊" tabindex="1" class="sr-only">跳到主要內容區塊</a>
+    <a href="#accesskey_C" id="gotocenter" title="跳到主要內容區塊" tabindex="1" class="sr-only">跳到主要內容區塊</a>
     <noscript>
         <div class="no_js_info">
             您的瀏覽器似乎不支援JavaScript語法，但沒關係，這裡的JavaScript語法並不會影響到內容的陳述， 如需要選擇字級大小，IE6請利用鍵盤按住ALT鍵+ V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小，
@@ -75,22 +75,31 @@
     <header id="head">
         <div id="head_bar">
             <a id="logo" href="index.html" tabindex="2" title="回首頁">
-                <h1>Alan Lin</h1>
+                <h1 lang="en">Alan Lin</h1>
             </a>
+            <ul class="font_size">
+                <li>字級：</li>
+                <li>
+                    <a id="jfontsize-plus" href="javascript:;" tabindex="3" title="放大內容區文字">放大</a>
+                </li>
+                <li>
+                    <a id="jfontsize-default" href="javascript:;" tabindex="3" title="適中內容區文字">標準</a>
+                </li>
+                <li><a id="color_blind_btn" href="javascript:;" tabindex="3" title="黑底黃字高反差模式">高反差模式</a></li>
+            </ul>
             <label title="主要選單" class="open_nav" for="main_menu">
-                <b>MENU</b>
+                <b lang="en">MENU</b>
                 <span class="icon">
                     <h2 title="主要選單">主要選單</h2>
                 </span>
             </label>
-
             <nav class="main_menu">
                 <a accesskey="M" id="accesskey_M" href="#accesskey_M" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
                     <span>:::</span>
                 </a>
                 <ul class="nav_style">
                     <li>
-                        <a href="about.html" title="About me 個人簡介" lang="en">
+                        <a href="about.html" title="個人簡介 About me" lang="en">
                             <div class="loader">
                                 <span>A</span>
                                 <span class="span2">B</span>
@@ -101,7 +110,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="portfolio.html" title="UI Design 使用者介面設計作品" lang="en">
+                        <a href="portfolio.html" title="使用者介面設計作品 UI Design" lang="en">
                             <div class="loader">
                                 <span>
                                     <abbr lang="en" title="User Interface">UI</abbr>
@@ -117,7 +126,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="graphic.html" title="Graphic Design 平面設計作品" lang="en">
+                        <a href="graphic.html" title="平面設計作品 Graphic Design" lang="en">
                             <div class="loader">
                                 <span>G</span>
                                 <span class="span2">R</span>
@@ -137,7 +146,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="painting.html" title="Painting 繪畫設計作品" lang="en">
+                        <a href="painting.html" title="繪畫設計作品 Painting" lang="en">
                             <div class="loader">
                                 <span>P</span>
                                 <span class="span2">A</span>
@@ -151,7 +160,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" title="Contact me 聯絡我們" lang="en">
+                        <a href="contact.html" title="聯絡我們 Contact me" lang="en">
                             <div class="loader">
                                 <span>C</span>
                                 <span class="span2">O</span>
@@ -164,7 +173,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="sitemap.html" title="Sitemap 網站導覽" lang="en">
+                        <a href="sitemap.html" title="網站導覽 Sitemap" lang="en">
                             <div class="loader active">
                                 <span>S</span>
                                 <span class="span2">I</span>
@@ -177,11 +186,6 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="font_size">
-                <li>字級：</li>
-                <li><a id="jfontsize-default" href="">標準</a></li>
-                <li><a id="jfontsize-plus" href="">放大</a></li>
-                </ul>
                 <!--nav_style-->
             </nav>
         </div>
@@ -189,10 +193,10 @@
     </header>
     <main id="content">
         <!--#main_content以下內容區-->
-        <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容" style="top:-60px;">
-            <span>:::</span>
-        </a>
         <article id="contact_me">
+            <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
+                <span>:::</span>
+            </a>
             <h2>
                 <b>06.</b>
                 <i>網站導覽</i>
@@ -200,30 +204,41 @@
             </h2>
             <section id="info">
                 <figure>
-                    <img src="images/alan_lin.png" alt="設計師 林位青 個人照片">
+                    <img class="high_contrast_hide" src="images/alan_lin.png" alt="設計師 林位青 個人照片">
+                    <img class="high_contrast_show" src="images/alan_lin_hc.png" alt="設計師 林位青 個人照片">
                 </figure>
             </section>
             <!--#info-->
             <div class="form_list sitmap_info">
+                本網站建議以Google Chrome、Microsofe Edge等瀏覽，以達最佳體驗效果。<br/>
                 本網站為響應式網頁設計，支援手機、平版及電腦瀏覽，並依據無障礙網頁設計原則而建置，在螢幕解析度大於1024像素時，增設導盲磚(
                 <span class="accesskey">:::</span>)設計，讓導覽者使用鍵盤操作上更方便：
                 <br/>
                 <div class="sitmap_info_title">
                     <h3>鍵盤操作</h3>
                 </div>
-                本網站亦可使用鍵盤操作瀏覽網頁。
-                <br/> [Alt+M]主要選單連結區，此區塊列有本網站的主要連結。
-                <br/> [Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容。
-                <br/> [Alt+T]僅出現於UI Design、Graphic Design、Painting網頁，此區塊呈現網頁頁籤按鈕。
-                <br/> [Alt+Z]頁尾下方選單連結區，此區塊列有facebook、linkedin、instagram、behance、youtube、pinterest、twitter等連結。
-                <br/> [Alt+X]頁尾下方資訊式頁尾連結區，此區塊列有網站導覽連結。
+                <p>
+                    本網站亦可使用鍵盤操作瀏覽網頁。
+                    <br/><b> [tab] </b>：在超連結、表單控制項之間移動。順序為：左上、右上、左中、中間、右中、下方移動。
+                    <br/><b> [Alt+M] </b>：主要選單連結區，此區塊列有本網站的主要連結。mac系統請使用[control + option + M]。
+                    <br/><b> [Alt+C] </b>：中間主要內容區，此區塊呈現網頁的網頁內容。mac系統請使用[control + option + C]。
+                    <br/><b> [Alt+Z] </b>：頁尾下方選單連結區，此區塊列有facebook、linkedin、instagram、behance、youtube、pinterest、twitter等連結。mac系統請使用[control + option + Z]。
+                    <br/><b> [Alt+X] </b>：頁尾下方資訊式頁尾連結區，此區塊列有網站導覽連結。mac系統請使用[control + option + X]。
+                </p>
+                <br/>
+                <p>
+                    UI Design、Graphic Design、Painting，此三頁網頁內容為大量圖片，點擊圖片進入燈箱效果模式(light box)。
+                    <br/><b> [esc] </b>離開燈箱效果模式(light box)
+                    <br/><b> [←] </b>上一張圖片
+                    <br/><b> [→] </b>下一張圖片
+                </p>
                 <br/>
                 <p>
                     <br/> ※當本網站項目頁籤無法以滑鼠點選時，您可利用以下鍵盤操作方式瀏覽資料
-                    <br/> ← → or ↑↓：按左右鍵或上下鍵移動標籤順序。
-                    <br/> Home or End→：可直接跳至標籤第一項或者最後一項。
-                    <br/> Tab：停留於該標籤後,可利用Tab鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使← → or↑↓鍵移動項目順序。
-                    <br/> Tab + Shift：按Tab + Shift可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用← → or↑↓鍵移動標籤順序。
+                    <br/><b> [←] </b><b> [→] </b>or <b> [↑] </b><b> [↓] </b>：按左右鍵或上下鍵移動標籤順序。
+                    <br/><b> [home] </b> or <b> [end] </b><b> [→] </b>：可直接跳至標籤第一項或者最後一項。
+                    <br/><b> [tab] </b>：停留於該標籤後,可利用Tab鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使← → or↑↓鍵移動項目順序。
+                    <br/><b> [tab] </b> + <b> [Shift] </b>：可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用← → or↑↓鍵移動標籤順序。
                 </p>
                 <ul class="sitmap_info_browser">更多鍵盤操作瀏覽網頁方式，請參閱各瀏覽器說明。
                     <li>
@@ -244,27 +259,37 @@
                     </li>
                 </ul>
                 <div class="sitmap_info_title">
+                    <h3>高反差模式</h3>
+                </div>
+                
+                本網站目前僅提供，黑底黃字模式，若需進一步調整，建議可安裝Chrome套件找出適合自己眼睛的高對比模式。<br/>
+                <ul class="sitmap_info_browser">
+                    <li>
+                        <a target="_blank" href="https://www.wfublog.com/2014/07/chrome-high-contrast-addon.html" title="Chrome套件 High Contrast(另開新視窗)">Chrome套件 High Contrast</a>
+                    </li>
+                </ul>
+                <div class="sitmap_info_title">
                     <h3>網站架構</h3>
                 </div>
                 <ol class="sitemap_list">
                     <li>
-                        <a href="about.html" data-text="ABOUT" title="About me 個人簡介" lang="en">ABOUT</a>
+                        <a href="about.html" data-text="ABOUT" title="個人簡介 About me" lang="en">ABOUT</a>
                         <b>個人簡介</b>
                     </li>
                     <li>
-                        <a href="portfolio.html" data-text="UI DESIGN" title="UI Design 使用者介面設計作品" lang="en"><abbr lang="en" title="User Interface">UI</abbr> DESIGN</a>
+                        <a href="portfolio.html" data-text="UI DESIGN" title="使用者介面設計作品 UI Design" lang="en"><abbr lang="en" title="User Interface">UI</abbr> DESIGN</a>
                         <b>使用者介面設計作品，區分為三個頁籤分別為WEB DESIGN網頁設計、<abbr lang="en" title="Application">APP</abbr> <abbr lang="en" title="User Interface">UI</abbr> DESIGN應用程式介面設計、BANNER / <abbr lang="en" title="Electronic Direct Mail">EDM</abbr>網路廣告及電子傳單</b>
                     </li>
                     <li>
-                        <a href="graphic.html" data-text="GRAPHIC DESIGN" title="Graphic Design 平面設計作品" lang="en">GRAPHIC DESIGN</a>
+                        <a href="graphic.html" data-text="GRAPHIC DESIGN" title="平面設計作品 Graphic Design" lang="en">GRAPHIC DESIGN</a>
                         <b>平面設計作品圖檔，區分為五個頁籤分別為PHILIPS飛利浦、OTHER其他設計稿、PACKAGE DESIGN包裝設計、LOGO DESIGN商標設計、DISPLAY展示設計</b>
                     </li>
                     <li>
-                        <a href="painting.html" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">PAINTING</a>
+                        <a href="painting.html" data-text="PAINTING" title="繪畫設計作品 Painting" target="_blank" lang="en">PAINTING</a>
                         <b>繪畫設計作品圖檔</b>
                     </li>
                     <li>
-                        <a href="contact.html" data-text="CONTACT" title="Contact me 聯絡我們" lang="en">CONTACT</a>
+                        <a href="contact.html" data-text="CONTACT" title="聯絡我們 Contact me" lang="en">CONTACT</a>
                         <b>聯絡我們</b>
                     </li>
                 </ol>
@@ -293,7 +318,7 @@
                 <span>:::</span>
             </a>
             <li>
-                <a href="about.html" class="button_language" data-text="ABOUT" title="About me 個人簡介" lang="en">
+                <a href="about.html" class="button_language" data-text="ABOUT" title="個人簡介 About me" lang="en">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
@@ -302,7 +327,7 @@
                 </a>
             </li>
             <li>
-                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design 使用者介面設計作品" lang="en">
+                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="使用者介面設計作品 UI Design" lang="en">
                     <span>
                         <abbr lang="en" title="User Interface">UI</abbr>
                     </span>
@@ -316,7 +341,7 @@
                 </a>
             </li>
             <li>
-                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design 平面設計作品" lang="en">
+                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="平面設計作品 Graphic Design" lang="en">
                     <span>G</span>
                     <span>R</span>
                     <span>A</span>
@@ -334,7 +359,7 @@
                 </a>
             </li>
             <li>
-                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">
+                <a href="painting.html" class="button_language" data-text="PAINTING" title="繪畫設計作品 Painting" target="_blank" lang="en">
                     <span>P</span>
                     <span>A</span>
                     <span>I</span>
@@ -346,7 +371,7 @@
                 </a>
             </li>
              <li>
-                <a href="contact.html" class="button_language" data-text="CONTACT" title="Contact me 聯絡我們" lang="en">
+                <a href="contact.html" class="button_language" data-text="CONTACT" title="聯絡我們 Contact me" lang="en">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>
@@ -357,7 +382,7 @@
                 </a>
             </li>
             <li>
-                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="Sitemap 網站導覽" lang="en">
+                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="網站導覽 Sitemap" lang="en">
                     <span>S</span>
                     <span>I</span>
                     <span>T</span>
@@ -369,7 +394,7 @@
             </li>
         </ul>
         <!--#sitemap-->
-            <div class="copyright">COPYRIGHT &#169; 2017
+            <div class="copyright">版權所有 COPYRIGHT &#169; 2018
                 <b>Alan Lin</b>
             </div>
         </div>
@@ -380,16 +405,6 @@
 <script src="js/jstorage.js"></script>
 <script src="js/jquery.jfontsize-2.0.js"></script>
 <script src="js/effect.js"></script>
-<script>
-    $(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        var adscrtop = 60;
-        if (scrollVal > adscrtop) {
-            $("#head").css({ "background": "white" });
-        } else {
-            $("#head").css({ "background": "none" });
-        }
-    });
-</script>
+
 </body>
 </html>

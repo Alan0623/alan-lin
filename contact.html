@@ -66,7 +66,7 @@
 <!--/head-->
 
 <body class="no_js">
-    <a href="#content" id="gotocenter" title="跳到主要內容區塊" tabindex="1" class="sr-only">跳到主要內容區塊</a>
+    <a href="#accesskey_C" id="gotocenter" title="跳到主要內容區塊" tabindex="1" class="sr-only">跳到主要內容區塊</a>
     <noscript>
         <div class="no_js_info">
             您的瀏覽器似乎不支援JavaScript語法，但沒關係，這裡的JavaScript語法並不會影響到內容的陳述， 如需要選擇字級大小，IE6請利用鍵盤按住ALT鍵+ V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小，
@@ -77,22 +77,33 @@
     <header id="head">
         <div id="head_bar">
             <a id="logo" href="index.html" tabindex="2" title="回首頁">
-                <h1>Alan Lin</h1>
+                <h1 lang="en">Alan Lin</h1>
             </a>
+            <ul class="font_size">
+                <li>字級：</li>
+                <li>
+                    <a id="jfontsize-plus" href="javascript:;" tabindex="3" title="放大內容區文字">放大</a>
+                </li>
+                <li>
+                    <a id="jfontsize-default" href="javascript:;" tabindex="3" title="適中內容區文字">標準</a>
+                </li>
+                <li>
+                    <a id="color_blind_btn" href="javascript:;" tabindex="3" title="黑底黃字高反差模式">高反差模式</a>
+                </li>
+            </ul>
             <label title="主要選單" class="open_nav" for="main_menu">
-                <b>MENU</b>
+                <b lang="en">MENU</b>
                 <span class="icon">
                     <h2 title="主要選單">主要選單</h2>
                 </span>
             </label>
-
             <nav class="main_menu">
                 <a accesskey="M" id="accesskey_M" href="#accesskey_M" title="[Alt+M]主要選單連結區，此區塊列有本網站的主要連結">
                     <span>:::</span>
                 </a>
                 <ul class="nav_style">
                     <li>
-                        <a href="about.html" title="About me 個人簡介" lang="en">
+                        <a href="about.html" title="個人簡介 About me" lang="en">
                             <div class="loader">
                                 <span>A</span>
                                 <span class="span2">B</span>
@@ -103,7 +114,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="portfolio.html" title="UI Design 使用者介面設計作品" lang="en">
+                        <a href="portfolio.html" title="使用者介面設計作品 UI Design" lang="en">
                             <div class="loader">
                                 <span><abbr lang="en" title="User Interface">UI</abbr></span>
                                 <span class="span4"> </span>
@@ -117,7 +128,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="graphic.html" title="Graphic Design 平面設計作品" lang="en">
+                        <a href="graphic.html" title="平面設計作品 Graphic Design" lang="en">
                             <div class="loader">
                                 <span>G</span>
                                 <span class="span2">R</span>
@@ -137,7 +148,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="painting.html" title="Painting 繪畫設計作品" lang="en">
+                        <a href="painting.html" title="繪畫設計作品 Painting" lang="en">
                             <div class="loader">
                                 <span>P</span>
                                 <span class="span2">A</span>
@@ -151,7 +162,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" title="Contact me 聯絡我們" lang="en">
+                        <a href="contact.html" title="聯絡我們 Contact me" lang="en">
                             <div class="loader active">
                                 <span>C</span>
                                 <span class="span2">O</span>
@@ -164,7 +175,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="sitemap.html" title="Sitemap 網站導覽" lang="en">
+                        <a href="sitemap.html" title="網站導覽 Sitemap" lang="en">
                             <div class="loader">
                                 <span>S</span>
                                 <span class="span2">I</span>
@@ -184,10 +195,10 @@
     </header>
     <main id="content">
         <!--#main_content以下內容區-->
-        <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容" style="top:-60px;">
-            <span>:::</span>
-        </a>
         <article id="contact_me">
+            <a accesskey="C" id="accesskey_C" href="#accesskey_C" title="[Alt+C]中間主要內容區，此區塊呈現網頁的網頁內容">
+                <span>:::</span>
+            </a>
             <h2>
                 <b>05.</b>
                 <i>請聯絡我</i>
@@ -195,13 +206,14 @@
             </h2>
             <section id="info">
                 <figure>
-                    <img src="images/alan_lin.png" alt="設計師 林位青 個人照片">
+                    <img class="high_contrast_hide" src="images/alan_lin.png" alt="設計師 林位青 個人照片">
+                    <img class="high_contrast_show" src="images/alan_lin_hc.png" alt="設計師 林位青 個人照片">
                 </figure>
             </section>
             <!--#info-->
             <div class="form_list portfolio-item isotope-item">
                 <p>感謝蒞臨參觀本站，有相關工作合作事宜，請與我洽談聯係。</p>
-                <ul class="instant_messaging gallery clearfix">
+                <!--ul class="instant_messaging gallery clearfix">
                     <h3>相關網站 Related website</h3>
                     <li>
                         <a title="case 518 外包網(另開新視窗)" href="https://case.518.com.tw/workroom-index-589921.html" target="_blank">case 518 外包網</a>
@@ -209,13 +221,13 @@
                     <li>
                         <a title="case 104 外包網(另開新視窗)" href="https://case.104.com.tw/soho/alan_lin" target="_blank">case 104 外包網</a>
                     </li>
-                    <!--li>
+                    <li>
                         <a title="林位青 2008 作品集網站(另開新視窗)" href="http://www.alan-lin.com/web/2008/index.html" target="_blank">2008 作品集網站 (flash)</a>
                     </li>
                     <li>
                         <a title="林位青 2010 作品集網站(另開新視窗)" href="http://www.alan-lin.com/web/2009/index.html" target="_blank">2010 作品集網站 (flash)</a>
-                    </li-->
-                </ul>
+                    </li>
+                </ul-->
                 <ul class="instant_messaging gallery clearfix">
                     <h3>即時通訊聯絡帳號 Instant messaging <abbr lang="en" title="identification">ID</abbr></h3>
                     <li class="icon-brand2">
@@ -230,9 +242,9 @@
                 </ul>
                 <form method="POST" action="https://formspree.io/r7a1984@hotmail.com">
                     <label for="email">電子信箱(必填):</label>
-                    <input id="email" type="email" name="email" placeholder="請輸入您的電子信箱 Your email">
-                    <label for="email">留言訊息(必填):</label>
-                    <textarea id="message" name="message" placeholder="請輸入訊息 Your message"></textarea>
+                    <input id="email" type="email" name="email" placeholder="您的電子信箱 Your email" title="請輸入您的電子信箱 Please enter your email address">
+                    <label for="message">留言訊息(必填):</label>
+                    <textarea id="message" name="message" placeholder="訊息 Message" title="請輸入訊息 Please enter a message"></textarea>
                     <button title="送出訊息 Send message" type="submit" class="button_more">送出 Send</button>
                 </form>
             </div>
@@ -260,7 +272,7 @@
                 <span>:::</span>
             </a>
             <li>
-                <a href="about.html" class="button_language" data-text="ABOUT" title="About me 個人簡介" lang="en">
+                <a href="about.html" class="button_language" data-text="ABOUT" title="個人簡介 About me" lang="en">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
@@ -269,7 +281,7 @@
                 </a>
             </li>
             <li>
-                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="UI Design 使用者介面設計作品" lang="en">
+                <a href="portfolio.html" class="button_language" data-text="UI DESIGN" title="使用者介面設計作品 UI Design" lang="en">
                     <span>
                         <abbr lang="en" title="User Interface">UI</abbr>
                     </span>
@@ -283,7 +295,7 @@
                 </a>
             </li>
             <li>
-                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="Graphic Design 平面設計作品" lang="en">
+                <a href="graphic.html" class="button_language" data-text="GRAPHIC DESIGN" title="平面設計作品 Graphic Design" lang="en">
                     <span>G</span>
                     <span>R</span>
                     <span>A</span>
@@ -301,7 +313,7 @@
                 </a>
             </li>
             <li>
-                <a href="painting.html" class="button_language" data-text="PAINTING" title="Painting 繪畫設計作品" target="_blank" lang="en">
+                <a href="painting.html" class="button_language" data-text="PAINTING" title="繪畫設計作品 Painting" target="_blank" lang="en">
                     <span>P</span>
                     <span>A</span>
                     <span>I</span>
@@ -313,7 +325,7 @@
                 </a>
             </li>
              <li>
-                <a href="contact.html" class="button_language" data-text="CONTACT" title="Contact me 聯絡我們" lang="en">
+                <a href="contact.html" class="button_language" data-text="CONTACT" title="聯絡我們 Contact me" lang="en">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>
@@ -324,7 +336,7 @@
                 </a>
             </li>
             <li>
-                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="Sitemap 網站導覽" lang="en">
+                <a href="sitemap.html" class="button_language" data-text="SITEMAP" title="網站導覽 Sitemap" lang="en">
                     <span>S</span>
                     <span>I</span>
                     <span>T</span>
@@ -336,7 +348,7 @@
             </li>
         </ul>
         <!--#sitemap-->
-            <div class="copyright">COPYRIGHT &#169; 2017
+            <div class="copyright">版權所有 COPYRIGHT &#169; 2018
                 <b>Alan Lin</b>
             </div>
         </div>
@@ -344,17 +356,8 @@
 <script src="js/jquery-latest.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
+<script src="js/jstorage.js"></script>
+<script src="js/jquery.jfontsize-2.0.js"></script>
 <script src="js/effect.js"></script>
-<script>
-    $(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        var adscrtop = 60;
-        if (scrollVal > adscrtop) {
-            $("#head").css({ "background": "white" });
-        } else {
-            $("#head").css({ "background": "none" });
-        }
-    });
-</script>
 </body>
 </html>

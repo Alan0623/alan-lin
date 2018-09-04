@@ -1,7 +1,7 @@
 @media screen and (min-width: 940px){
     body{
         background-image: url("../images/body_bg.gif");
-            background-position:center 553px;
+            background-position:center 493px;
             background-size: unset;
             background-repeat: no-repeat;
     }
@@ -23,6 +23,9 @@
             background-repeat: no-repeat;
             height: 494px;
             width: 100%;
+            .high_contrast &{
+                background-image: url("../images/Master_Vision_pc_hc.gif");
+            }
             &:before{
                display: none;
             }
@@ -30,7 +33,8 @@
                 h2{
                     font-size: 10em;
                     opacity: .6;
-                    top: 50px;
+                    //top: 50px;
+                    top: 120px;
                     right: 60px;
                 }
             }
@@ -95,7 +99,7 @@
                         h3{line-height: .7em;
                             &:after{top: 3px;
                                 height: 97px;
-                                right: unset;
+                                right: auto;
                                 left: 111px;
                                 width: 338px;
                             }
@@ -115,7 +119,7 @@
                         h3{
                             &:after{    left: -67px;
                                         top: -40px;
-                                        right: unset;
+                                        right: auto;
                                         height: 100px;
                                         width: 345px;
                             }
@@ -132,5 +136,8 @@
 
   footer#fatfooter{
     background-image: url("../images/footer_bg.gif");
+    .high_contrast &{
+        background-image: none;
+    }
   }
 }

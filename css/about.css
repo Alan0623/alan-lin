@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* line 1, ../sass/about.scss */
 header#head {
-  background: none;
+  background-repeat: repeat-x;
 }
 
-/* line 4, ../sass/about.scss */
+/* line 5, ../sass/about.scss */
 main#content {
   min-height: 550px;
   background-image: none;
@@ -12,31 +12,46 @@ main#content {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
-  /* line 4, ../sass/about.scss */
+  /* line 5, ../sass/about.scss */
   main#content {
     background-image: url(../images/body_bg2.gif);
   }
 }
+/* line 13, ../sass/about.scss */
+.high_contrast main#content {
+  background-image: none;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 13, ../sass/about.scss */
+  /* line 17, ../sass/about.scss */
   #about_me {
     height: 1950px;
   }
 }
 
-/* line 19, ../sass/about.scss */
+/* line 23, ../sass/about.scss */
 #contact_me,
 #about_me {
   width: 100%;
-  overflow: hidden;
   max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 200px;
   position: relative;
 }
-/* line 28, ../sass/about.scss */
+/* line 32, ../sass/about.scss */
+#contact_me b,
+#about_me b {
+  background-color: #f6f6f6;
+  padding: 1px 0px 3px 4px;
+  margin-right: 2px;
+}
+/* line 36, ../sass/about.scss */
+.high_contrast #contact_me b, .high_contrast
+#about_me b {
+  background-color: black;
+}
+/* line 40, ../sass/about.scss */
 #contact_me:before,
 #about_me:before {
   content: "";
@@ -50,19 +65,29 @@ main#content {
   border-width: 367px 600px 0 0;
   border-color: #F6F6F6 transparent transparent  transparent;
   line-height: 0px;
-  _border-color: #F6F6F6  #000000 #000000 #000000;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   opacity: 1;
   transition: transform 0.5s;
 }
 @media screen and (min-width: 768px) {
-  /* line 28, ../sass/about.scss */
+  /* line 40, ../sass/about.scss */
   #contact_me:before,
   #about_me:before {
     display: none;
   }
 }
-/* line 48, ../sass/about.scss */
+/* line 58, ../sass/about.scss */
+#contact_me::after,
+#about_me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 64, ../sass/about.scss */
+.high_contrast #contact_me:before, .high_contrast
+#about_me:before {
+  display: none;
+}
+/* line 68, ../sass/about.scss */
 #contact_me h2,
 #about_me h2 {
   font-weight: normal;
@@ -79,22 +104,24 @@ main#content {
   right: 0;
   margin: 0 auto;
 }
-/* line 60, ../sass/about.scss */
+/* line 80, ../sass/about.scss */
 #contact_me h2 b,
 #about_me h2 b {
   color: #DFDFDF;
   float: left;
   font-size: 2.6em;
 }
-/* line 61, ../sass/about.scss */
+/* line 81, ../sass/about.scss */
 #contact_me h2 i,
 #about_me h2 i {
   font-style: normal;
   display: block;
-  float: left;
+  position: absolute;
+  width: 300px;
+  padding-left: 87px;
   margin-top: -13px;
 }
-/* line 62, ../sass/about.scss */
+/* line 82, ../sass/about.scss */
 #contact_me h2 u,
 #about_me h2 u {
   text-decoration: none;
@@ -102,9 +129,9 @@ main#content {
   position: absolute;
   padding-left: 87px;
   top: 15px;
-  width: 250px;
+  width: 300px;
 }
-/* line 63, ../sass/about.scss */
+/* line 83, ../sass/about.scss */
 #contact_me h2:after,
 #about_me h2:after {
   position: absolute;
@@ -116,14 +143,25 @@ main#content {
   background-color: #71C1DD;
 }
 @media screen and (min-width: 768px) {
-  /* line 48, ../sass/about.scss */
+  /* line 68, ../sass/about.scss */
   #contact_me h2,
   #about_me h2 {
     left: 25px;
-    right: unset;
+    right: auto;
   }
 }
-/* line 69, ../sass/about.scss */
+/* line 89, ../sass/about.scss */
+.high_contrast #contact_me h2 b, .high_contrast
+#about_me h2 b {
+  color: #fefe00;
+  opacity: .5;
+}
+/* line 90, ../sass/about.scss */
+.high_contrast #contact_me h2:after, .high_contrast
+#about_me h2:after {
+  background-color: #fefe00;
+}
+/* line 95, ../sass/about.scss */
 #contact_me #info,
 #contact_me #WORK_EXPERIENCE,
 #contact_me #EDUCATION,
@@ -139,7 +177,7 @@ main#content {
   line-height: 1.6em;
   margin-bottom: 54px;
 }
-/* line 78, ../sass/about.scss */
+/* line 104, ../sass/about.scss */
 #contact_me #info h3,
 #contact_me #WORK_EXPERIENCE h3,
 #contact_me #EDUCATION h3,
@@ -155,7 +193,20 @@ main#content {
   margin-bottom: 24px;
   color: #499CB9;
 }
-/* line 85, ../sass/about.scss */
+/* line 109, ../sass/about.scss */
+.high_contrast #contact_me #info h3, .high_contrast
+#contact_me #WORK_EXPERIENCE h3, .high_contrast
+#contact_me #EDUCATION h3, .high_contrast
+#contact_me #COMPUTER_SKILL h3, .high_contrast
+#contact_me #LICENSES h3, .high_contrast
+#about_me #info h3, .high_contrast
+#about_me #WORK_EXPERIENCE h3, .high_contrast
+#about_me #EDUCATION h3, .high_contrast
+#about_me #COMPUTER_SKILL h3, .high_contrast
+#about_me #LICENSES h3 {
+  color: #fefe00;
+}
+/* line 114, ../sass/about.scss */
 #contact_me #info ul li,
 #contact_me #WORK_EXPERIENCE ul li,
 #contact_me #EDUCATION ul li,
@@ -170,17 +221,22 @@ main#content {
   line-height: 1.6em;
   margin: 8px 0;
 }
-/* line 92, ../sass/about.scss */
+/* line 121, ../sass/about.scss */
 #contact_me #info h3,
 #about_me #info h3 {
   color: #000;
 }
-/* line 93, ../sass/about.scss */
+/* line 122, ../sass/about.scss */
+.high_contrast #contact_me #info h3, .high_contrast
+#about_me #info h3 {
+  color: #fefe00;
+}
+/* line 126, ../sass/about.scss */
 #contact_me #LICENSES ul,
 #about_me #LICENSES ul {
   position: relative;
 }
-/* line 95, ../sass/about.scss */
+/* line 128, ../sass/about.scss */
 #contact_me #LICENSES ul::after,
 #about_me #LICENSES ul::after {
   content: "";
@@ -193,6 +249,12 @@ main#content {
   border-bottom: 3px solid #71C1DD;
   transform-origin: bottom center;
   transform: rotateZ(-38deg) scale(0.5);
+}
+/* line 142, ../sass/about.scss */
+.high_contrast #contact_me #LICENSES ul::after, .high_contrast
+#about_me #LICENSES ul::after {
+  border-color: #fefe00;
+  opacity: .5;
 }
 @keyframes slash {
   0% {
@@ -208,7 +270,7 @@ main#content {
     transform: rotateZ(45deg) scale(1.414);
   }
 }
-/* line 126, ../sass/about.scss */
+/* line 163, ../sass/about.scss */
 #contact_me #info figure img,
 #about_me #info figure img {
   width: 250px;
@@ -221,14 +283,20 @@ main#content {
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  /* line 126, ../sass/about.scss */
+  /* line 163, ../sass/about.scss */
   #contact_me #info figure img,
   #about_me #info figure img {
     left: 10px;
-    right: unset;
+    right: auto;
   }
 }
-/* line 140, ../sass/about.scss */
+/* line 175, ../sass/about.scss */
+.high_contrast #contact_me #info figure img, .high_contrast
+#about_me #info figure img {
+  border: #fefe00 solid thin;
+  border-radius: 50%;
+}
+/* line 181, ../sass/about.scss */
 #contact_me #info figcaption,
 #about_me #info figcaption {
   margin-top: 280px;
@@ -236,10 +304,10 @@ main#content {
   right: 0;
   top: 0;
   max-width: 470px;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.6em;
 }
-/* line 148, ../sass/about.scss */
+/* line 189, ../sass/about.scss */
 #contact_me #info figcaption::after,
 #about_me #info figcaption::after {
   content: "";
@@ -253,8 +321,14 @@ main#content {
   transform-origin: bottom center;
   transform: rotateZ(-38deg) scale(0.5);
 }
+/* line 203, ../sass/about.scss */
+.high_contrast #contact_me #info figcaption::after, .high_contrast
+#about_me #info figcaption::after {
+  border-color: #fefe00;
+  opacity: .5;
+}
 @media screen and (min-width: 768px) {
-  /* line 140, ../sass/about.scss */
+  /* line 181, ../sass/about.scss */
   #contact_me #info figcaption,
   #about_me #info figcaption {
     position: absolute;
@@ -262,7 +336,7 @@ main#content {
     right: 30px;
   }
 }
-/* line 167, ../sass/about.scss */
+/* line 214, ../sass/about.scss */
 #contact_me #info figcaption h3,
 #about_me #info figcaption h3 {
   font-family: 'Kaushan Script', cursive;
@@ -270,13 +344,13 @@ main#content {
   line-height: 1.6em;
   margin-bottom: 5px;
 }
-/* line 173, ../sass/about.scss */
+/* line 220, ../sass/about.scss */
 #contact_me #info figcaption p,
 #about_me #info figcaption p {
   padding: 5px 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 176, ../sass/about.scss */
+  /* line 223, ../sass/about.scss */
   #contact_me .form_list,
   #contact_me .cv,
   #about_me .form_list,
@@ -288,19 +362,19 @@ main#content {
     margin-right: 10px;
   }
 }
-/* line 187, ../sass/about.scss */
+/* line 234, ../sass/about.scss */
 #contact_me .cv,
 #about_me .cv {
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
-  /* line 187, ../sass/about.scss */
+  /* line 234, ../sass/about.scss */
   #contact_me .cv,
   #about_me .cv {
-    margin-top: 240px;
+    margin-top: 25em;
   }
 }
-/* line 195, ../sass/about.scss */
+/* line 242, ../sass/about.scss */
 #contact_me #EDUCATION ul li,
 #contact_me #WORK_EXPERIENCE ul li,
 #about_me #EDUCATION ul li,
@@ -308,14 +382,14 @@ main#content {
   padding-left: 50px;
   position: relative;
 }
-/* line 198, ../sass/about.scss */
+/* line 245, ../sass/about.scss */
 #contact_me #EDUCATION ul li a,
 #contact_me #WORK_EXPERIENCE ul li a,
 #about_me #EDUCATION ul li a,
 #about_me #WORK_EXPERIENCE ul li a {
   color: #000;
 }
-/* line 199, ../sass/about.scss */
+/* line 246, ../sass/about.scss */
 #contact_me #EDUCATION ul li a:focus, #contact_me #EDUCATION ul li a:hover,
 #contact_me #WORK_EXPERIENCE ul li a:focus,
 #contact_me #WORK_EXPERIENCE ul li a:hover,
@@ -325,7 +399,26 @@ main#content {
 #about_me #WORK_EXPERIENCE ul li a:hover {
   color: #71C1DD;
 }
-/* line 204, ../sass/about.scss */
+/* line 250, ../sass/about.scss */
+.high_contrast #contact_me #EDUCATION ul li a, .high_contrast
+#contact_me #WORK_EXPERIENCE ul li a, .high_contrast
+#about_me #EDUCATION ul li a, .high_contrast
+#about_me #WORK_EXPERIENCE ul li a {
+  color: #fefe00;
+  text-decoration: underline;
+}
+/* line 253, ../sass/about.scss */
+.high_contrast #contact_me #EDUCATION ul li a:focus, .high_contrast #contact_me #EDUCATION ul li a:hover, .high_contrast
+#contact_me #WORK_EXPERIENCE ul li a:focus, .high_contrast
+#contact_me #WORK_EXPERIENCE ul li a:hover, .high_contrast
+#about_me #EDUCATION ul li a:focus, .high_contrast
+#about_me #EDUCATION ul li a:hover, .high_contrast
+#about_me #WORK_EXPERIENCE ul li a:focus, .high_contrast
+#about_me #WORK_EXPERIENCE ul li a:hover {
+  background-color: #fefe00;
+  color: black;
+}
+/* line 260, ../sass/about.scss */
 #contact_me #EDUCATION ul li b,
 #contact_me #WORK_EXPERIENCE ul li b,
 #about_me #EDUCATION ul li b,
@@ -338,12 +431,12 @@ main#content {
 }
 
 /*about_me*/
-/* line 213, ../sass/about.scss */
+/* line 269, ../sass/about.scss */
 #contact_me {
   margin-bottom: 50px;
 }
 
-/* line 214, ../sass/about.scss */
+/* line 270, ../sass/about.scss */
 .form_list {
   width: 99%;
   margin-top: 0px;
@@ -351,46 +444,59 @@ main#content {
   padding-top: 200px;
 }
 @media screen and (min-width: 768px) {
-  /* line 214, ../sass/about.scss */
+  /* line 270, ../sass/about.scss */
   .form_list {
     padding-top: 0px;
   }
 }
-/* line 222, ../sass/about.scss */
+/* line 278, ../sass/about.scss */
 .form_list h3 {
   font-size: 1.2em;
   letter-spacing: 1px;
   color: #499CB9;
 }
-/* line 227, ../sass/about.scss */
+/* line 282, ../sass/about.scss */
+.high_contrast .form_list h3 {
+  color: #fefe00;
+}
+/* line 284, ../sass/about.scss */
 .form_list .instant_messaging {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 230, ../sass/about.scss */
+/* line 287, ../sass/about.scss */
 .form_list .instant_messaging li {
   margin: 10px 0;
 }
-/* line 231, ../sass/about.scss */
+/* line 288, ../sass/about.scss */
 .form_list .instant_messaging li::before {
   line-height: 16px;
   padding-right: 0px;
 }
-/* line 235, ../sass/about.scss */
+/* line 292, ../sass/about.scss */
 .form_list .instant_messaging li a {
   color: #000;
   text-decoration: underline;
 }
-/* line 237, ../sass/about.scss */
+/* line 294, ../sass/about.scss */
 .form_list .instant_messaging li a:focus, .form_list .instant_messaging li a:hover {
   color: #71C1DD;
 }
-/* line 246, ../sass/about.scss */
+/* line 298, ../sass/about.scss */
+.high_contrast .form_list .instant_messaging li a {
+  color: #fefe00;
+}
+/* line 299, ../sass/about.scss */
+.high_contrast .form_list .instant_messaging li a:focus, .high_contrast .form_list .instant_messaging li a:hover {
+  color: #000;
+  background-color: #fefe00;
+}
+/* line 310, ../sass/about.scss */
 .form_list form label {
   display: block;
   margin: 5px 0;
 }
-/* line 250, ../sass/about.scss */
+/* line 314, ../sass/about.scss */
 .form_list form input, .form_list form textarea {
   font-size: 0.8em;
   font-family: "微軟正黑體","Ubuntu", Helvetica, "Heiti TC", "Microsoft Sans Serif", "Microsoft Sans Serif", "Helvetica", "Geneva", "sans-serif";
@@ -402,33 +508,63 @@ main#content {
   margin-bottom: 0.5em;
   border-radius: 5px;
 }
-/* line 260, ../sass/about.scss */
+/* line 324, ../sass/about.scss */
 .form_list form input:focus, .form_list form textarea:focus {
   outline: #71C1DD solid 4px;
   border-radius: 5px;
 }
-/* line 265, ../sass/about.scss */
+/* line 328, ../sass/about.scss */
+.high_contrast .form_list form input, .high_contrast .form_list form textarea {
+  background-color: #000;
+  border: #fefe00 solid 3px;
+  color: #fefe00;
+}
+/* line 332, ../sass/about.scss */
+.high_contrast .form_list form input ::-webkit-input-placeholder, .high_contrast .form_list form textarea ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fefe00;
+}
+/* line 335, ../sass/about.scss */
+.high_contrast .form_list form input ::-moz-placeholder, .high_contrast .form_list form textarea ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fefe00;
+}
+/* line 338, ../sass/about.scss */
+.high_contrast .form_list form input :-ms-input-placeholder, .high_contrast .form_list form textarea :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fefe00;
+}
+/* line 341, ../sass/about.scss */
+.high_contrast .form_list form input :-moz-placeholder, .high_contrast .form_list form textarea :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fefe00;
+}
+/* line 346, ../sass/about.scss */
 .form_list form textarea {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
   min-height: 300px;
 }
-/* line 269, ../sass/about.scss */
+/* line 350, ../sass/about.scss */
 .form_list form button.button_more {
   border: 1px solid #ddd;
   padding: .1em 3em;
 }
+/* line 353, ../sass/about.scss */
+.high_contrast .form_list form button.button_more {
+  border: 3px solid #fefe00;
+}
 
 @media screen and (min-width: 505px) {
-  /* line 276, ../sass/about.scss */
+  /* line 360, ../sass/about.scss */
   .form_list {
     width: 470px;
     max-width: 470px;
     min-width: 470px;
     margin-top: 0px;
   }
-  /* line 280, ../sass/about.scss */
+  /* line 364, ../sass/about.scss */
   .form_list form textarea {
     width: 470px;
     max-width: 470px;
@@ -436,43 +572,64 @@ main#content {
     min-height: 300px;
   }
 }
-/* line 287, ../sass/about.scss */
+/* line 371, ../sass/about.scss */
 .sitmap_info {
   line-height: 1.6em;
 }
-/* line 289, ../sass/about.scss */
+/* line 373, ../sass/about.scss */
 .sitmap_info .sitmap_info_title {
   margin-top: 20px;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
-/* line 296, ../sass/about.scss */
+/* line 377, ../sass/about.scss */
+.sitmap_info .sitmap_info_title h3 {
+  margin-bottom: 10px;
+}
+/* line 383, ../sass/about.scss */
 .sitmap_info .sitemap_list a,
 .sitmap_info .sitmap_info_browser a {
   color: #249edd;
   text-decoration: underline;
 }
-/* line 299, ../sass/about.scss */
+/* line 386, ../sass/about.scss */
 .sitmap_info .sitemap_list a:focus, .sitmap_info .sitemap_list a:hover,
 .sitmap_info .sitmap_info_browser a:focus,
 .sitmap_info .sitmap_info_browser a:hover {
   color: orange;
 }
-/* line 304, ../sass/about.scss */
+/* line 391, ../sass/about.scss */
+.high_contrast .sitmap_info .sitemap_list a, .high_contrast
+.sitmap_info .sitmap_info_browser a {
+  color: #fefe00;
+  text-decoration: underline;
+}
+/* line 394, ../sass/about.scss */
+.high_contrast .sitmap_info .sitemap_list a:focus, .high_contrast .sitmap_info .sitemap_list a:hover, .high_contrast
+.sitmap_info .sitmap_info_browser a:focus, .high_contrast
+.sitmap_info .sitmap_info_browser a:hover {
+  color: black;
+  background-color: #fefe00;
+}
+/* line 401, ../sass/about.scss */
 .sitmap_info .sitemap_list {
   margin-left: 20px;
   margin-top: 5px;
 }
-/* line 307, ../sass/about.scss */
+/* line 404, ../sass/about.scss */
 .sitmap_info .sitemap_list li {
   list-style-type: decimal;
   padding: 5px 0;
 }
-/* line 309, ../sass/about.scss */
+/* line 406, ../sass/about.scss */
 .sitmap_info .sitemap_list li b {
   display: block;
   font-weight: normal;
   color: #3e3b33;
   font-size: .9em;
   line-height: 1.4em;
+}
+/* line 412, ../sass/about.scss */
+.high_contrast .sitmap_info .sitemap_list li b {
+  color: #fefe00;
 }

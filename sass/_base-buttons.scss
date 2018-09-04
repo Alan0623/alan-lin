@@ -3,7 +3,7 @@
 ------------------------------------------------------------------*/
 .button_more {
 	cursor: pointer;
-	font-size: .9em;
+	font-size: 1em;
 	line-height: 50px;
 	letter-spacing: 2px;
 	font-weight: normal;
@@ -35,7 +35,7 @@
 	text-shadow:1px 1px 0px #ffffff;
  	-webkit-box-shadow:inset 1px 1px 2px 0px #ffffff;
  	-moz-box-shadow:inset 1px 1px 2px 0px #ffffff;
- 	box-shadow:inset 1px 1px 2px 0px #ffffff;
+	 box-shadow:inset 1px 1px 2px 0px #ffffff;
 	&:focus {
 		border: none;
 		outline: none;
@@ -75,6 +75,18 @@
 	&:hover:before {/*水波*/
 		-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
 		animation: anim-moema-2 0.3s 0.3s forwards;
+	}
+	.high_contrast &{
+		background:black;
+		color:#fefe00;
+		border:3px solid #fefe00;
+		text-shadow:unset;
+		box-shadow:unset;
+		&:focus,
+		&:hover {
+		color: black;
+		background-color: #fefe00;
+		}
 	}
 	@-webkit-keyframes anim-moema-1 {
 		60% {
@@ -137,6 +149,9 @@
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
 	color: $btn-color;
+	.high_contrast &{
+	color: #fefe00;
+	}
 }
 
 .button_language > span {
@@ -151,6 +166,9 @@
 	transition: transform 0.3s, opacity 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	.high_contrast &{
+		color: #fefe00;
+	}
 }
 .button_language::before {
 	content: attr(data-text);
@@ -238,6 +256,10 @@
 
 .container {
   margin: auto;
+  width: 990px;
+      @media screen and (max-width: 940px){
+       width: 100%;
+    }
   //-webkit-box-reflect: below -2em -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,.4)));
   //pointer-events: none;
 }
@@ -247,11 +269,19 @@
   //font-size: 4em;
   color: #f0f0f0;
   text-align: center;
-  span {
+  h2 {
     display: inline-block;
     will-change: transform;
-    animation: animation 2s linear infinite alternate;
-    opacity: 0;
+    animation: animation 4s linear infinite alternate;
+	opacity: 0;
+	@media screen and (max-width: 768px){
+		animation: unset;
+		opacity: 1;
+	}
+	.high_contrast &{
+		animation: unset;
+		opacity: 1;
+	}
   }
   h1 {
     font-weight: bold;

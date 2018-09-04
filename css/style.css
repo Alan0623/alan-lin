@@ -56,6 +56,16 @@
   content: "\e900";
   color: #00c300;
 }
+.high_contrast .icon-brand:before,
+.high_contrast .icon-skype:before,
+.high_contrast .icon-brand5:before,
+.high_contrast .icon-wechat:before,
+.high_contrast .icon-brand22:before,
+.high_contrast .icon-brand3:before,
+.high_contrast .icon-brand4:before,
+.high_contrast .icon-brand2:before{
+  color: #fefe00;
+}
 .icon-instagram:before {
   content: "\e901";
 }

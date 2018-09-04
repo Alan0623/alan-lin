@@ -415,7 +415,7 @@ a.pp_expand, a.pp_contract {
 div.ppt {
   color: #fff;
   display: none;
-  font-size: 17px;
+  font-size: 1.063em;
   z-index: 9999;
   margin: 0 0 5px 15px;
 }

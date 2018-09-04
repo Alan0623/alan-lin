@@ -18,10 +18,11 @@ main#content{
       border-width: 0 0 220px 360px;
       border-color: transparent transparent #D8D8D8 transparent;
       line-height: 0px;
-      _border-color: #000000 #000000 #D8D8D8 #000000;
-      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
       opacity:.8 ;
-        transition: transform 0.5s;
+      transition: transform 0.5s;
+      .high_contrast &{
+          display: none;
+      }
     }
   section#master_Vision{
     margin-top: 60px;
@@ -38,9 +39,10 @@ main#content{
       border-width: 0 0 220px 360px;
       border-color: transparent transparent #D8D8D8 transparent;
       line-height: 0px;
-      _border-color: #000000 #000000 #D8D8D8 #000000;
-      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
       opacity:.8 ;  transition: transform 0.5s;
+      .high_contrast &{
+        border-color: transparent transparent black transparent;
+      }
     }
     .slider-wrapper.theme-default{width: 100%;
         #slider{
@@ -50,22 +52,35 @@ main#content{
                     width: 100%;
                     display: block;
                     position: relative;
+                    @media screen and (max-width:767px) {
+                     &.high_contrast_show{
+                         display: none;
+                     }
+                    }
                 }
             }
         }
     }
-    div.Hello{height:unset;max-width: 940px;width:100%;margin: 0 auto;position: relative;z-index: 99;}
+    div.Hello{height:auto;max-width: 940px;width:100%;margin: 0 auto;position: relative;z-index: 99;}
     h2,h3{font-family: 'Vidaloka', serif;}
-    h2{position: absolute;z-index:10;
-      font-size: 4.5em;
-          bottom: 50px;
-      right: 40%;
-      font-weight: 100;
-      color: $major-color;
-      transition: transform 0.3s, opacity 0.3s;}
-      
+    h2{
+        position: absolute;z-index:10;
+        font-size: 4.5em;
+        bottom: 50px;
+        right: 40%;
+        font-weight: 100;
+        color: $major-color;
+        transition: transform 0.3s, opacity 0.3s;
+        .high_contrast &{
+            color: #fefe00;
+            opacity: .9;
+        }
+    }
     @media screen and (min-width:400px) {
-            h2{right: 50%;}
+        h2{right: 50%;}
+    }
+    @media screen and (min-width:768px) {
+        margin-top: 0px;
     }
     h3{position: absolute;z-index:11;
       color: #fff;
@@ -78,6 +93,9 @@ main#content{
       bottom: -25px;
         @media screen and (min-width:400px) {
             bottom: -10px;
+        }
+        .high_contrast &{
+        color: #fefe00;
         }
     }
 
@@ -92,6 +110,9 @@ main#content{
         font-weight:lighter;
         @media screen and (min-width:400px) {
             bottom: -30px;
+        }
+        .high_contrast &{
+            color: #fefe00;
         }
     }
   }/*main#content*/
@@ -112,8 +133,11 @@ main#content{
         border-width: 306px 500px 0 0;
         border-color: #f6f6f6 transparent transparent transparent;
         line-height: 0px;
-        _border-color: #f6f6f6 #000000 #000000 #000000;
-        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+    .high_contrast &{
+    &:before{
+    border-color: transparent transparent #000 transparent;
+    }
     }
     img{width: 100%;}
     h2{font-weight:normal;
@@ -133,6 +157,12 @@ main#content{
             background-color:  $major-color;
 
         }
+        .high_contrast &{
+            b{color: #fefe00;}
+            &:after{
+                background-color:#fefe00;
+            }
+        }
     }
     section{
         figure{position: relative;
@@ -143,8 +173,14 @@ main#content{
                     line-height: .7em;
                     b{font-weight: normal;}
                 }
-                a{margin: 20px 50px;}
-                p{font-size: 1em;line-height: 1.6em;}
+                a{
+                    margin: 20px 50px;
+                @media screen and (max-width:330px) {
+                    margin: 0;
+                }
+                
+                }
+                p{font-size: 1.05em;line-height: 1.6em;}
             }
         }
     }
@@ -155,7 +191,7 @@ main#content{
                     &:before{
                     content: "";
                     position: absolute;
-                    bottom:2px;
+                    bottom:0px;
                     right: 0;
                     z-index: 2;
                     width: 0;
@@ -164,17 +200,28 @@ main#content{
                     border-width: 0 0 49px 80px;
                     border-color: transparent transparent #fff transparent;
                     line-height: 0px;
-                    _border-color: #000000 #000000 #fff #000000;
-                    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
                     opacity:1;
                     }
+                    .high_contrast &{
+                        &:before{
+                        border-color: transparent transparent #000 transparent;
+                        }
+                    }
                 }
+                
             figcaption{
                 h3{bottom: 270px;position: absolute;
-                    b{color: $major-color;font-weight: normal;}
+                    b{color: $major-color;font-weight: normal;
+                        .high_contrast &{
+                            color: #fefe00;
+                        }
+                    }
                 }
-                @media screen and (min-width:400px) {
-                h3{bottom: 240px;}
+                @media screen and (max-width:409px) {
+                h3{bottom: 270px;}
+                }
+                @media screen and (max-width:326px) {
+                h3{bottom: 290px;}
                 }
                 p{padding-top: 100px;}
             }
@@ -196,9 +243,12 @@ main#content{
                     border-width:  49px 80px 0 0;
                     border-color: #fff  transparent transparent transparent;
                     line-height: 0px;
-                    _border-color: #fff #000000 #000000  #000000;
-                    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
                     opacity:1;
+                    }
+                    .high_contrast &{
+                        &:before{
+                        border-color: #000 transparent transparent  transparent;
+                        }
                     }
                 }
                 figcaption{
@@ -229,6 +279,13 @@ main#content{
                         right: 0px;
                     }
                 }
+            .high_contrast &{
+                i,
+                b{color: #fefe00;}
+                &:after{
+                display: none;
+                }
+            }
         }
         @media screen and (min-width:400px) {
             h3{
@@ -290,6 +347,16 @@ main#content{
                 text-decoration: none;
                 padding-left:50px;
                 }
+            .high_contrast &{
+                b{color: #fefe00;
+                  position: absolute;
+                    top: -5px;
+                    left: 16px;
+                }
+                &:after{
+                display: none;
+                }
+            }
         }
         @media screen and (min-width:400px) {
             h3{padding-left: 20px;
@@ -332,9 +399,3 @@ main#content{
 }
 @import "index_for_pad";
 @import 'index_for_pc';
-
-
-
-
-
-

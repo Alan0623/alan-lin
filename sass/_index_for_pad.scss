@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px){
     main#content section#master_Vision h2{
-right: unset;left: 20px;bottom: -48px;
+right: auto;left: 20px;bottom: -48px;
     }
 }
 @media screen and (min-width: 768px){
@@ -16,12 +16,19 @@ right: unset;left: 20px;bottom: -48px;
             background-repeat: no-repeat;
             height: 446px;
             width: 100%;
+            .high_contrast &{
+                background-image: url("../images/Master_Vision_pad_hc.gif");
+            }
             &:before{
                 bottom: 0px;
             }
             div.Hello{height:446px;}
             u{bottom: 30px;}
-            h2{left: unset;right: 20px;top: 80px;}
+            h2{left: auto;
+                //right: 20px;top: 80px;
+                top: 160px;
+                right: 50px;
+            }
             h3{bottom: 50px;}
            .slider-wrapper.theme-default{display: none;
                 #slider{
@@ -30,7 +37,9 @@ right: unset;left: 20px;bottom: -48px;
             }
         }
 
-        article#my_services{margin-top: 0px;    padding-bottom: 47px;
+        article#my_services{
+            margin-top: 0px;
+            padding-bottom: 32px;
             &:before{
                 border-width: 196px 320px 0 0
             }
@@ -45,7 +54,8 @@ right: unset;left: 20px;bottom: -48px;
             section{width: 713px;margin: 0 auto;
                 figure>figcaption{
                     h3{font-size: 4.4em;line-height: .68em;}
-                    a{font-size: .5em;width:238px;height:48px;line-height:48px;padding: 0;}
+                    a{//font-size: .5em;
+                    width:238px;height:48px;line-height:48px;padding: 0;}
                 }
             }
             section#web_design{padding-top: 40px;
@@ -58,7 +68,7 @@ right: unset;left: 20px;bottom: -48px;
                     }
                     figcaption{
                         h3{bottom: unset;top: 0;left: 0px;}
-                        p{width: 240px;margin-left:0px;line-height:1.5em;}
+                        p{width: 240px;margin-left:0px;}
                         a.button_more{margin: 6px 2px;}
                     }
                 }
@@ -73,10 +83,10 @@ right: unset;left: 20px;bottom: -48px;
                     figcaption{float: right;
                         h3{padding-top: 4px;
                             &:after{
-                                    top: 2px;
-                                    height: 96px;
-                                    width: 148px;
-                                    right: 20px;
+                                top: 2px;
+                                height: 96px;
+                                width: 148px;
+                                right: 20px;
                             }
                         }
                         p{width: 240px;padding-bottom: 40px;}

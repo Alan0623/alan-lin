@@ -62,7 +62,7 @@
       $(opcoes.btnPlusClasseId).addClass("jfontsize-disabled");
     }
     apply();
-    $(opcoes.btnMinusClasseId).click(function() {
+    $(opcoes.btnMinusClasseId).on('click',function() {
       $(opcoes.btnPlusClasseId).removeClass("jfontsize-disabled");
       if (current_size > (-opcoes.btnMinusMaxHits)) {
         current_size--;
@@ -73,7 +73,7 @@
         return save();
       }
     });
-    $(opcoes.btnDefaultClasseId).click(function() {
+    $(opcoes.btnDefaultClasseId).on('click',function() {
       $(opcoes.btnMinusClasseId).removeClass("jfontsize-disabled");
       $(opcoes.btnPlusClasseId).removeClass("jfontsize-disabled");
       current_size = 0;
@@ -82,7 +82,7 @@
       });
       return save();
     });
-    return $(opcoes.btnPlusClasseId).click(function() {
+    return $(opcoes.btnPlusClasseId).on('click',function() {
       $(opcoes.btnMinusClasseId).removeClass("jfontsize-disabled");
       if (current_size < opcoes.btnPlusMaxHits) {
         current_size++;

@@ -32,11 +32,14 @@ main#content {
 #my_portfolio h2 i {
   font-style: normal;
   display: block;
-  float: left;
+  position: absolute;
+  width: 300px;
+  padding-left: 87px;
   margin-top: -13px;
 }
 /* line 17, ../sass/portfolio.scss */
 #my_portfolio h2 u {
+  width: 300px;
   text-decoration: none;
   display: block;
   position: absolute;
@@ -52,6 +55,15 @@ main#content {
   width: 220px;
   height: 3px;
   background-color: #71C1DD;
+}
+/* line 29, ../sass/portfolio.scss */
+.high_contrast #my_portfolio h2 b {
+  color: #fefe00;
+  opacity: .5;
+}
+/* line 30, ../sass/portfolio.scss */
+.high_contrast #my_portfolio h2:after {
+  background-color: #fefe00;
 }
 
 /* line 36, ../sass/portfolio.scss */
@@ -86,13 +98,13 @@ main#content {
   background-color: #71C1DD;
   color: #fff;
 }
-/* line 58, ../sass/portfolio.scss */
+/* line 57, ../sass/portfolio.scss */
 .portfolio-filter > li a.active {
   background-color: #499CB9;
   color: #fff;
   position: relative;
 }
-/* line 62, ../sass/portfolio.scss */
+/* line 61, ../sass/portfolio.scss */
 .portfolio-filter > li a.active:before, .portfolio-filter > li a.active:after {
   position: absolute;
   left: 36%;
@@ -103,44 +115,72 @@ main#content {
   border-width: 8px 13px 0 13px;
   border-color: #71C1DD transparent transparent transparent;
 }
-/* line 73, ../sass/portfolio.scss */
+/* line 72, ../sass/portfolio.scss */
 .portfolio-filter > li a.active:before {
   display: none;
 }
-/* line 76, ../sass/portfolio.scss */
+/* line 75, ../sass/portfolio.scss */
 .portfolio-filter > li a.active:after {
   left: 36%;
   bottom: -8px;
   border-color: #499CB9 transparent transparent transparent;
   z-index: 1;
 }
+/* line 82, ../sass/portfolio.scss */
+.high_contrast .portfolio-filter > li a {
+  color: #fefe00;
+  border-color: #fefe00;
+}
+/* line 83, ../sass/portfolio.scss */
+.high_contrast .portfolio-filter > li a:focus, .high_contrast .portfolio-filter > li a:hover {
+  background-color: #fefe00;
+  color: black;
+}
+/* line 88, ../sass/portfolio.scss */
+.high_contrast .portfolio-filter > li a.active {
+  background-color: #fefe00;
+  color: black;
+}
+/* line 91, ../sass/portfolio.scss */
+.high_contrast .portfolio-filter > li a.active:before, .high_contrast .portfolio-filter > li a.active:after {
+  border-color: #fefe00 transparent transparent transparent;
+}
 
 @media screen and (min-width: 940px) {
-  /* line 87, ../sass/portfolio.scss */
+  /* line 100, ../sass/portfolio.scss */
   .portfolio-filter > li {
     display: inline-block;
     margin: 15px 20px;
     font-size: .85em;
     letter-spacing: .2em;
   }
-  /* line 92, ../sass/portfolio.scss */
+  /* line 105, ../sass/portfolio.scss */
   .portfolio-filter > li a {
     padding: 0 5px;
     padding-bottom: 5px;
     color: #000;
     border: none;
   }
-  /* line 96, ../sass/portfolio.scss */
+  /* line 109, ../sass/portfolio.scss */
   .portfolio-filter > li a:focus, .portfolio-filter > li a:hover, .portfolio-filter > li a.active {
     background: none;
     color: #71C1DD;
   }
-  /* line 103, ../sass/portfolio.scss */
+  /* line 115, ../sass/portfolio.scss */
+  .high_contrast .portfolio-filter > li a {
+    color: #fefe00;
+  }
+  /* line 116, ../sass/portfolio.scss */
+  .high_contrast .portfolio-filter > li a:focus, .high_contrast .portfolio-filter > li a:hover, .high_contrast .portfolio-filter > li a.active {
+    background: none;
+    color: #fefe00;
+  }
+  /* line 123, ../sass/portfolio.scss */
   .portfolio-filter > li a.active {
     border-bottom: #71C1DD solid 3px;
     position: relative;
   }
-  /* line 106, ../sass/portfolio.scss */
+  /* line 126, ../sass/portfolio.scss */
   .portfolio-filter > li a.active:before {
     display: block;
     left: 36%;
@@ -148,13 +188,25 @@ main#content {
     border-color: #fff transparent transparent transparent;
     z-index: 2;
   }
-  /* line 114, ../sass/portfolio.scss */
+  /* line 134, ../sass/portfolio.scss */
   .portfolio-filter > li a.active:after {
     bottom: -10px;
     border-color: #71C1DD transparent transparent transparent;
   }
+  /* line 141, ../sass/portfolio.scss */
+  .high_contrast .portfolio-filter > li a.active {
+    border-bottom: #fefe00 solid 3px;
+  }
+  /* line 143, ../sass/portfolio.scss */
+  .high_contrast .portfolio-filter > li a.active:before {
+    border-color: black transparent transparent transparent;
+  }
+  /* line 146, ../sass/portfolio.scss */
+  .high_contrast .portfolio-filter > li a.active:after {
+    border-color: #fefe00 transparent transparent transparent;
+  }
 }
-/* line 126, ../sass/portfolio.scss */
+/* line 155, ../sass/portfolio.scss */
 .portfolio-items > li {
   float: left;
   padding: 0;
@@ -163,37 +215,37 @@ main#content {
   box-sizing: border-box;
 }
 
-/* line 133, ../sass/portfolio.scss */
+/* line 162, ../sass/portfolio.scss */
 .portfolio-items.col-2 > li {
   width: 50%;
 }
 
-/* line 136, ../sass/portfolio.scss */
+/* line 165, ../sass/portfolio.scss */
 .portfolio-items.col-3 > li {
   width: 33%;
 }
 
-/* line 139, ../sass/portfolio.scss */
+/* line 168, ../sass/portfolio.scss */
 .portfolio-items.col-4 > li {
   width: 25%;
 }
 
-/* line 142, ../sass/portfolio.scss */
+/* line 171, ../sass/portfolio.scss */
 .portfolio-items.col-5 > li {
   width: 20%;
 }
 
-/* line 145, ../sass/portfolio.scss */
+/* line 174, ../sass/portfolio.scss */
 .portfolio-items.col-6 > li {
   width: 16%;
 }
 
-/* line 148, ../sass/portfolio.scss */
+/* line 177, ../sass/portfolio.scss */
 .portfolio-item {
   padding: 0;
   margin: 0;
 }
-/* line 151, ../sass/portfolio.scss */
+/* line 180, ../sass/portfolio.scss */
 .portfolio-item .item-inner {
   background: #fff;
   border: 1px solid #eee;
@@ -204,12 +256,17 @@ main#content {
   overflow: hidden;
   padding-bottom: 40px;
 }
-/* line 160, ../sass/portfolio.scss */
+/* line 189, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner {
+  background: black;
+  border-color: #fefe00;
+}
+/* line 193, ../sass/portfolio.scss */
 .portfolio-item .item-inner a {
   visibility: hidden;
   display: none;
 }
-/* line 161, ../sass/portfolio.scss */
+/* line 194, ../sass/portfolio.scss */
 .portfolio-item .item-inner .weblink {
   background-image: url("../images/web_link.png");
   background-size: cover;
@@ -227,25 +284,36 @@ main#content {
   z-index: 9999;
   opacity: .5;
 }
-/* line 177, ../sass/portfolio.scss */
+/* line 210, ../sass/portfolio.scss */
 .portfolio-item .item-inner .weblink:focus, .portfolio-item .item-inner .weblink:hover {
   background-image: url("../images/web_link_b.png");
   opacity: 1;
 }
-/* line 185, ../sass/portfolio.scss */
+/* line 215, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner .weblink {
+  background-image: url("../images/web_link_y.png");
+  opacity: 1;
+}
+/* line 221, ../sass/portfolio.scss */
 .portfolio-item .item-inner:hover .weblink {
   background-image: url("../images/web_link_o.png");
   opacity: 1;
 }
-/* line 190, ../sass/portfolio.scss */
+/* line 224, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner:hover .weblink {
+  background-image: url("../images/web_link_b.png");
+}
+/* line 229, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2,
 .portfolio-item .item-inner .overlay {
   display: block;
   visibility: visible;
-  border: #fff solid thin;
   cursor: pointer;
   border-radius: 50px;
+  height: 201px;
 }
-/* line 196, ../sass/portfolio.scss */
+/* line 237, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:before,
 .portfolio-item .item-inner .overlay:before {
   display: block;
   position: absolute;
@@ -256,9 +324,10 @@ main#content {
   height: 300px;
   content: "";
   opacity: 0;
-  background: #206983;
+  background: #206c87;
 }
-/* line 208, ../sass/portfolio.scss */
+/* line 249, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:after,
 .portfolio-item .item-inner .overlay:after {
   position: absolute;
   font-style: normal;
@@ -277,7 +346,19 @@ main#content {
   border: #fff solid thin;
   border-radius: 40px;
 }
-/* line 226, ../sass/portfolio.scss */
+/* line 268, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner .overlay2:before, .high_contrast
+.portfolio-item .item-inner .overlay:before {
+  background: #fefe00;
+}
+/* line 271, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner .overlay2:after, .high_contrast
+.portfolio-item .item-inner .overlay:after {
+  color: black;
+  border: black solid 2px;
+}
+/* line 276, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2 a,
 .portfolio-item .item-inner .overlay a {
   position: absolute;
   top: 45%;
@@ -291,33 +372,56 @@ main#content {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 244, ../sass/portfolio.scss */
+/* line 296, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus:before,
+.portfolio-item .item-inner .overlay2:hover:before,
 .portfolio-item .item-inner .overlay:focus:before,
 .portfolio-item .item-inner .overlay:hover:before {
   opacity: 0.8;
 }
-/* line 247, ../sass/portfolio.scss */
+/* line 299, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus:after,
+.portfolio-item .item-inner .overlay2:hover:after,
 .portfolio-item .item-inner .overlay:focus:after,
 .portfolio-item .item-inner .overlay:hover:after {
   opacity: 1;
 }
-/* line 250, ../sass/portfolio.scss */
+/* line 302, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus span,
+.portfolio-item .item-inner .overlay2:hover span,
 .portfolio-item .item-inner .overlay:focus span,
 .portfolio-item .item-inner .overlay:hover span {
   position: absolute;
   width: 100%;
   z-index: 999;
   left: 0;
-  bottom: 5px;
+  bottom: 0px;
 }
-/* line 256, ../sass/portfolio.scss */
+/* line 308, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus span u,
+.portfolio-item .item-inner .overlay2:focus span b,
+.portfolio-item .item-inner .overlay2:hover span u,
+.portfolio-item .item-inner .overlay2:hover span b,
 .portfolio-item .item-inner .overlay:focus span u,
 .portfolio-item .item-inner .overlay:focus span b,
 .portfolio-item .item-inner .overlay:hover span u,
 .portfolio-item .item-inner .overlay:hover span b {
   color: #eee;
+  background-color: transparent;
 }
-/* line 259, ../sass/portfolio.scss */
+/* line 313, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner .overlay2:focus span u, .high_contrast .portfolio-item .item-inner .overlay2:focus span b, .high_contrast
+.portfolio-item .item-inner .overlay2:hover span u, .high_contrast
+.portfolio-item .item-inner .overlay2:hover span b, .high_contrast
+.portfolio-item .item-inner .overlay:focus span u, .high_contrast
+.portfolio-item .item-inner .overlay:focus span b, .high_contrast
+.portfolio-item .item-inner .overlay:hover span u, .high_contrast
+.portfolio-item .item-inner .overlay:hover span b {
+  color: black;
+}
+/* line 316, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus img,
+.portfolio-item .item-inner .overlay2:hover img,
 .portfolio-item .item-inner .overlay:focus img,
 .portfolio-item .item-inner .overlay:hover img {
   -moz-transform: scale(1.4);
@@ -326,36 +430,50 @@ main#content {
   -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
-/* line 266, ../sass/portfolio.scss */
+/* line 323, ../sass/portfolio.scss */
+.portfolio-item .item-inner .overlay2:focus i,
+.portfolio-item .item-inner .overlay2:hover i,
 .portfolio-item .item-inner .overlay:focus i,
 .portfolio-item .item-inner .overlay:hover i {
   visibility: visible;
 }
-/* line 272, ../sass/portfolio.scss */
+/* line 329, ../sass/portfolio.scss */
 .portfolio-item .item-inner span {
   position: absolute;
   width: 100%;
   z-index: 999;
   left: 0;
-  bottom: 5px;
+  bottom: 0px;
 }
-/* line 278, ../sass/portfolio.scss */
+/* line 335, ../sass/portfolio.scss */
 .portfolio-item .item-inner span u {
   display: block;
   text-decoration: none;
   padding-left: 8px;
   font-size: .8em;
   color: #999999;
+  background-color: white;
 }
-/* line 286, ../sass/portfolio.scss */
+/* line 342, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner span u {
+  color: #fefe00;
+  background-color: black;
+}
+/* line 344, ../sass/portfolio.scss */
 .portfolio-item .item-inner span b {
   color: #000;
   display: block;
   padding-left: 8px;
   padding-bottom: 5px;
   font-size: 1em;
+  background-color: white;
 }
-/* line 293, ../sass/portfolio.scss */
+/* line 345, ../sass/portfolio.scss */
+.high_contrast .portfolio-item .item-inner span b {
+  color: #fefe00;
+  background-color: black;
+}
+/* line 353, ../sass/portfolio.scss */
 .portfolio-item .item-inner img {
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
@@ -367,20 +485,20 @@ main#content {
   margin-left: -1px;
   margin-top: -1px;
 }
-/* line 304, ../sass/portfolio.scss */
+/* line 364, ../sass/portfolio.scss */
 .portfolio-item .item-inner h5 {
   background: #fff;
   margin: 0;
   padding: 10px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #2c3e50;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-/* line 318, ../sass/portfolio.scss */
+/* line 378, ../sass/portfolio.scss */
 .portfolio-item .overlay:focus,
 .portfolio-item .overlay:hover {
   opacity: 1;
@@ -388,19 +506,19 @@ main#content {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 322, ../sass/portfolio.scss */
+/* line 382, ../sass/portfolio.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 325, ../sass/portfolio.scss */
+/* line 385, ../sass/portfolio.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 330, ../sass/portfolio.scss */
+/* line 390, ../sass/portfolio.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -410,7 +528,7 @@ main#content {
   transition-duration: 0.8s;
 }
 
-/* line 338, ../sass/portfolio.scss */
+/* line 398, ../sass/portfolio.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -419,7 +537,7 @@ main#content {
   transition-property: height, width;
 }
 
-/* line 345, ../sass/portfolio.scss */
+/* line 405, ../sass/portfolio.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -429,7 +547,7 @@ main#content {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 353, ../sass/portfolio.scss */
+/* line 413, ../sass/portfolio.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -442,7 +560,7 @@ main#content {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 364, ../sass/portfolio.scss */
+/* line 424, ../sass/portfolio.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -509,10 +627,10 @@ main#content {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 437, ../sass/portfolio.scss */
+  /* line 497, ../sass/portfolio.scss */
   .portfolio-items.col-3 > li {
     width: 100%;
     display: block;
-    position: unset;
+    position: relative;
   }
 }
