@@ -6,6 +6,7 @@ right: auto;left: 20px;bottom: -48px;
 @media screen and (min-width: 768px){
 
     main#content{
+        padding-bottom: 217px;
         &:after {
             border-width: 0 0 293px 480px !important;
         }
@@ -39,7 +40,7 @@ right: auto;left: 20px;bottom: -48px;
 
         article#my_services{
             margin-top: 0px;
-            padding-bottom: 32px;
+            padding-bottom: 16px;
             &:before{
                 border-width: 196px 320px 0 0
             }
@@ -118,3 +119,5 @@ right: auto;left: 20px;bottom: -48px;
     }
     
 }
+
+*::-ms-backdrop, article#my_services{padding-bottom: 15px;}

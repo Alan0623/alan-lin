@@ -4,40 +4,6 @@ fancybox
 $(document).ready(function () {
     console.log("Hello!! Nice to see you.(・∀・).");
     console.log("Front-end programming By Alan Lin  www.alan-lin.com");
-    /*
-    console.log("            0000   000")
-    console.log("          000 00   00")
-    console.log("         00   00   00")
-    console.log("        00    000  00")
-    console.log("      00000000000  00    0000    00  000")
-    console.log("      00      000  00  00   00   00 0  00")
-    console.log("     00       000  00  00   00   000   00")
-    console.log("    00        000  00   0000  00 00    00")*/
-    /*
-    $('.portfolio-item .item-inner a,.form_list .instant_messaging li a').fancybox({
-        openEffect: 'elastic',
-        closeEffect: 'elastic',
-        next: {
-            39: 'left'
-        },
-        prev: {
-            37: 'right'
-        },
-        selector: '[data-fancybox="filter"]:visible',
-        thumbs: {
-            autoStart: true
-        },
-        afterLoad: function () {
-            var el, id = $(this.element).data('title-id');
-            if (id) {
-                el = $('#' + id);
-
-                if (el.length) {
-                    this.title = el.html();
-                }
-            }
-        }
-    });*/
     $('.portfolio-item .item-inner a:not(.overlay2),.form_list .instant_messaging li a').fancybox({
         //selector: '[data-fancybox="filter"]',
         openEffect: 'elastic',
@@ -127,64 +93,6 @@ $(".open_nav").click(function() {
     });
 });
 /*------------------------------------------------------------------
-
-------------------------------------------------------------------*/
-var sentence = document.querySelector('.sentence');
-//var h1 = document.querySelector('h1');
-var h2 = document.querySelector('h2');
-
-var wordsToArray = function wordsToArray(str) {
-    return str.split('').map(function (e) {
-        return e === ' ' ? '&nbsp;' : e;
-    });
-};
-
-function insertSpan(elem, letters, startTime) {
-    elem.textContent = '';
-    var curr = 0;
-    var delay = 20;
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-        for (var _iterator = letters[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var letter = _step.value;
-
-            var span = document.createElement('span');
-            span.innerHTML = letter;
-            span.style.animationDelay = ++curr / delay + (startTime || 0) + 's';
-            elem.appendChild(span);
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
-    }
-}
-
-//insertSpan(h1, wordsToArray(h1.textContent));
-insertSpan(h2, wordsToArray(h2.textContent), .5);
-
-document.addEventListener('mousemove', function (e) {
-    var xpos = e.layerX || e.offsetX;
-    var ypos = e.layerY || e.offsetY;
-
-    var ax = -(window.innerWidth / 2 - xpos) / 20;
-    var ay = (window.innerHeight / 2 - ypos) / 10;
-
-    //sentence.style.transform = 'rotateY(' + ax + 'deg) rotateX(' + ay + 'deg)';
-});
-/*------------------------------------------------------------------
 主選單下滑
 ------------------------------------------------------------------*/
 $(window).scroll(function () {
@@ -256,6 +164,16 @@ $('#jfontsize-default').focus(function () {
         }
     });
 });
+$("#jfontsize-plus").keyup(function (event) {
+    if (event.keyCode === 13) {
+        $("#jfontsize-plus").click();
+    }
+});
+$("#jfontsize-default").keyup(function (event) {
+    if (event.keyCode === 13) {
+        $("#jfontsize-default").click();
+    }
+});
 /*------------------------------------------------------------------
 色盲 高反差
 ------------------------------------------------------------------*/
@@ -292,3 +210,52 @@ $(function () {
 /*------------------------------------------------------------------
 
 ------------------------------------------------------------------*/
+$(function () {
+    $(".overlay").click(function () {
+        $(".fancybox-button--fullscreen").focus();
+       // $(".fancybox-toolbar").find("button:ntd-child(1)").focus();
+    });
+
+    var browser = navigator.appName;
+    if (browser == "Netscape") {    //如果瀏覽器為Netscape或者Firefox
+        //開始監聽鍵盤事件
+        document.captureEvents(Event.KEYDOWN)
+        document.onkeydown = function (event) {
+            if (event.which == 37) {
+                //key code 37為→
+                $(".fancybox-button--arrow_left").focus();
+            }
+            else if (event.which == 39) {
+                //key code 39為←
+                $(".fancybox-button--arrow_right").focus();
+            }
+            /*
+            $('#jfontsize-plus').focus(function () {
+                if (event.which == 13) {
+                    $('#jfontsize-plus').click();
+                }
+            }
+
+            $('#jfontsize-default').focus(function () {
+                if (event.which == 13) {
+                    $('#jfontsize-default').click();
+                }
+            }
+            */
+        }
+    }
+    else {    //假設瀏覽器不為Nescape則猜測為ie
+        //開始監聽鍵盤事件
+        document.onkeydown = function () {
+            if (event.whitch == 37) {
+                //key code 37為→
+                $(".fancybox-button--arrow_left").focus();
+            }
+            else if (event.whitch == 39) {
+                $(".fancybox-button--arrow_right").focus();
+                //key code 39為←
+                
+            }
+        }
+    }
+});

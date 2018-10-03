@@ -3,10 +3,18 @@ header#head{
       background-repeat: repeat-x;
 }
 main#content{
+  overflow: hidden;
   min-height: 550px;
   background-image:none;
   background-position: -680px top;
   background-repeat: no-repeat;
+  padding-bottom: 183px;
+  @media screen and (max-width:602px){
+      padding-bottom: 257px;
+  }
+  @media screen and (max-width:449px){
+      padding-bottom: 379px;
+  }
   @media screen and (min-width:768px){
   background-image: url(../images/body_bg2.gif);
   }
@@ -30,11 +38,11 @@ main#content{
     padding-top: 200px;
     position: relative;
     b{
-      background-color: #f6f6f6;
+      //background-color: #f6f6f6;
       padding: 1px 0px 3px 4px;
       margin-right: 2px;
       .high_contrast &{
-        background-color: black;
+        //background-color: black;
       }
     }
     &:before{

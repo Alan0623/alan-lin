@@ -5,7 +5,7 @@
 	cursor: pointer;
 	font-size: 1em;
 	line-height: 50px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-weight: normal;
 	display: flex; align-items: center; justify-content: center;
 	border: none;
@@ -23,19 +23,16 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
-	border:1px solid #d9d9d9;
+	border:1px solid #33839e;
+	border-bottom:3px solid #33839e;
 	padding:9px 18px;
 	text-decoration:none;
-	background:-moz-linear-gradient( center top, #ffffff 5%, #f0f0f0 100% );
-	background:-ms-linear-gradient( top, #ffffff 5%, #f0f0f0 100% );
-	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0');
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffffff), color-stop(100%, #f0f0f0) );
-	background-color:#ffffff;
-	color:#4d4d4d;
-	text-shadow:1px 1px 0px #ffffff;
- 	-webkit-box-shadow:inset 1px 1px 2px 0px #ffffff;
- 	-moz-box-shadow:inset 1px 1px 2px 0px #ffffff;
-	 box-shadow:inset 1px 1px 2px 0px #ffffff;
+	color:#fff;
+	background:-moz-linear-gradient( center top, #57bfcf 5%, #499bb9 100% );
+	background:-ms-linear-gradient( top, #57bfcf 5%, #499bb9 100% );
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#57bfcf', endColorstr='#499bb9');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #57bfcf), color-stop(100%, #499bb9) );
+	text-shadow:1px 1px 0px #33839e;
 	&:focus {
 		border: none;
 		outline: none;
@@ -59,6 +56,7 @@
 	}
 	&:focus,
 	&:hover {
+		font-weight: bold;
 		background:none;
 		text-shadow:none;
 		box-shadow:none;
@@ -80,8 +78,8 @@
 		background:black;
 		color:#fefe00;
 		border:3px solid #fefe00;
-		text-shadow:unset;
-		box-shadow:unset;
+		text-shadow:none;
+		box-shadow:none;
 		&:focus,
 		&:hover {
 		color: black;
@@ -274,6 +272,8 @@
     will-change: transform;
     animation: animation 4s linear infinite alternate;
 	opacity: 0;
+	//animation: unset;
+	//opacity: 1;
 	@media screen and (max-width: 768px){
 		animation: unset;
 		opacity: 1;

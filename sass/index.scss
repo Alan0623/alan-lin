@@ -6,6 +6,13 @@
 ------------------------------------------------------------------*/
 main#content{
     position: relative;
+    padding-bottom: 183px;
+    @media screen and (max-width:602px){
+        padding-bottom: 257px;
+    }
+    @media screen and (max-width:449px){
+        padding-bottom: 379px;
+    }
     &:after{
       content: "";
       position: absolute;
@@ -263,6 +270,7 @@ main#content{
         h3{
             margin: 0 -20px;
             padding-left: 20px;
+            margin-top: 2px;
                 i{color:$major-color;font-style: normal;}
                 b{color:white;}
                 &:after{
@@ -330,7 +338,7 @@ main#content{
         h3{
             margin: 0 -20px;
             padding-left: 17px;
-            margin-top: 65px;
+            margin-top: 69px;
                 b{color:white;}
                 &:after{
                 content: "";
@@ -399,3 +407,8 @@ main#content{
 }
 @import "index_for_pad";
 @import 'index_for_pc';
+
+
+footer#fatfooter ul#community li a{
+    box-shadow: none;
+}
